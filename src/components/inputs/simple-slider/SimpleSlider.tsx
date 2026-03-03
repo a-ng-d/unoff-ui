@@ -34,12 +34,17 @@ export interface SimpleSliderProps {
   /**
    * Colors for gradient display
    */
-  colors: {
+  colors?: {
     /** Start color */
     min: string
     /** End color */
     max: string
   }
+  /**
+   * Whether to show a progress bar from the start to the current value
+   * @default false
+   */
+  hasProgressBar?: boolean
   /**
    * Warning tooltip configuration
    */
@@ -91,6 +96,7 @@ export default class SimpleSlider extends React.Component<
   private value: number
 
   static defaultProps: Partial<SimpleSliderProps> = {
+    hasProgressBar: false,
     isBlocked: false,
     isDisabled: false,
     isNew: false,
@@ -226,6 +232,19 @@ export default class SimpleSlider extends React.Component<
   }
 
   // Templates
+  Progress = () => {
+    const { value, min, max, hasProgressBar } = this.props
+
+    if (!hasProgressBar) return null
+
+    return (
+      <div
+        className="simple-slider__progress"
+        style={{ width: `${doMap(value, min, max, 0, 100)}%` }}
+      />
+    )
+  }
+
   Status = () => {
     const { warning, isBlocked, isNew, onUnblock } = this.props
 
@@ -279,9 +298,13 @@ export default class SimpleSlider extends React.Component<
           className="simple-slider__range"
           role="presentation"
           style={{
-            background: `linear-gradient(90deg, ${colors.min}, ${colors.max})`,
+            background:
+              colors !== undefined
+                ? `linear-gradient(90deg, ${colors.min}, ${colors.max})`
+                : undefined,
           }}
         >
+          <this.Progress />
           <Knob
             id={id}
             shortId={label}

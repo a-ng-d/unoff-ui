@@ -50,12 +50,16 @@ interface SliderProps {
   /**
    * Colors for gradient display
    */
-  colors: {
+  colors?: {
     /** Start color */
     min: string
     /** End color */
     max: string
   }
+  /**
+   * Whether to show a progress bar between the first and last stop
+   */
+  hasProgressBar?: boolean
   /**
    * Tooltip configuration
    */
@@ -114,10 +118,7 @@ export default class Slider extends React.Component<SliderProps, SliderState> {
       min: 0,
       max: 100,
     },
-    colors: {
-      min: 'white',
-      max: 'white',
-    },
+    hasProgressBar: false,
     isBlocked: false,
     isNew: false,
   }
@@ -172,7 +173,9 @@ export default class Slider extends React.Component<SliderProps, SliderState> {
       rangeRect = range.getBoundingClientRect(),
       rangeWidth = rangeRect.width as number,
       slider = range.parentElement as HTMLElement,
-      stops = Array.from(range.children as HTMLCollectionOf<HTMLElement>)
+      stops = Array.from(
+        range.children as HTMLCollectionOf<HTMLElement>
+      ).filter((el) => el.dataset.id !== undefined)
 
     this.setState({
       activeKnobId: stop.dataset.id || null,
@@ -469,6 +472,26 @@ export default class Slider extends React.Component<SliderProps, SliderState> {
   }
 
   // Templates
+  Progress = () => {
+    const { scale, range, hasProgressBar } = this.props
+
+    if (!hasProgressBar) return null
+
+    const values = Object.values(scale).sort((a, b) => a - b)
+
+    if (values.length < 2) return null
+
+    const left = doMap(values[0], range.min, range.max, 0, 100)
+    const right = doMap(values[values.length - 1], range.min, range.max, 0, 100)
+
+    return (
+      <div
+        className="multiple-slider__progress"
+        style={{ left: `${left}%`, width: `${right - left}%` }}
+      />
+    )
+  }
+
   Status = () => {
     const { warning, isBlocked, isNew } = this.props
 
@@ -507,10 +530,14 @@ export default class Slider extends React.Component<SliderProps, SliderState> {
           isBlocked && 'multiple-slider__range--blocked',
         ])}
         style={{
-          background: `linear-gradient(90deg, ${colors.min}, ${colors.max})`,
+          background:
+            colors !== undefined
+              ? `linear-gradient(90deg, ${colors.min}, ${colors.max})`
+              : undefined,
         }}
         role="presentation"
       >
+        <this.Progress />
         {Object.entries(scale)
           .sort((a, b) => a[1] - b[1])
           .map((item, index, original) => (
@@ -575,12 +602,16 @@ export default class Slider extends React.Component<SliderProps, SliderState> {
           isBlocked && 'multiple-slider__range--blocked',
         ])}
         style={{
-          background: `linear-gradient(90deg, ${colors.min}, ${colors.max})`,
+          background:
+            colors !== undefined
+              ? `linear-gradient(90deg, ${colors.min}, ${colors.max})`
+              : undefined,
         }}
         onMouseDown={(e) =>
           stops.list.length < (stops.max ?? Infinity) && this.onAdd(e)
         }
       >
+        <this.Progress />
         {Object.entries(scale)
           .sort((a, b) => a[1] - b[1])
           .map((item, index, original) => (
