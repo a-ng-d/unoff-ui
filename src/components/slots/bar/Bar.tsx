@@ -56,6 +56,11 @@ export interface BarProps {
    * @default false
    */
   shouldReflow?: boolean
+  /**
+   * Whether to use a vertical (column) layout
+   * @default false
+   */
+  isVertical?: boolean
 }
 
 export default class Bar extends React.Component<BarProps> {
@@ -65,6 +70,7 @@ export default class Bar extends React.Component<BarProps> {
     isInverted: false,
     isCentered: false,
     shouldReflow: false,
+    isVertical: false,
   }
 
   setBorder = (
@@ -92,6 +98,7 @@ export default class Bar extends React.Component<BarProps> {
       isInverted,
       isCentered,
       shouldReflow,
+      isVertical,
       border,
       padding,
       clip,
@@ -113,6 +120,7 @@ export default class Bar extends React.Component<BarProps> {
       isInverted && 'bar--inverted',
       isCentered && 'bar--centered',
       shouldReflow && 'bar--reflow',
+      isVertical && 'bar--vertical',
       clip && clip.includes('LEFT') && 'bar--clip-left',
       clip && clip.includes('RIGHT') && 'bar--clip-right',
       clip && clip.includes('SOLO') && 'bar--clip-solo',

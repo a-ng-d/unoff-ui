@@ -26,6 +26,7 @@ export const Default: Story = {
     soloPartSlot: undefined,
     rightPartSlot: <div className={doClassnames([texts.type])}>Right Part</div>,
     border: ['BOTTOM'],
+    isVertical: false,
   },
 }
 
@@ -40,6 +41,7 @@ export const TruncateLeft: Story = {
     rightPartSlot: <div className={doClassnames([texts.type])}>Right Part</div>,
     clip: ['LEFT'],
     border: ['BOTTOM'],
+    isVertical: false,
   },
 }
 
@@ -58,6 +60,7 @@ export const TruncateRight: Story = {
     isInverted: true,
     clip: ['RIGHT'],
     border: ['BOTTOM'],
+    isVertical: false,
   },
 }
 
@@ -72,6 +75,7 @@ export const TruncateSolo: Story = {
     ),
     clip: ['SOLO'],
     border: ['BOTTOM'],
+    isVertical: false,
   },
 }
 
@@ -89,5 +93,6 @@ export const TruncateBoth: Story = {
     ),
     clip: ['LEFT', 'RIGHT'],
     border: ['BOTTOM'],
+    isVertical: false,
   },
 }
