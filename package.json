@@ -21,7 +21,9 @@
   "overrides": {
     "storybook": "$storybook",
     "vite": "$vite",
-    "minimatch": "^10.2.3"
+    "@microsoft/api-extractor": {
+      "minimatch": "^10.2.3"
+    }
   },
   "files": [
     "dist"
