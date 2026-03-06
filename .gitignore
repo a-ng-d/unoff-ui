@@ -15,7 +15,7 @@ dist/
 Thumbs.db
 
 # Testing
-coverage
+coverage/
 
 # Env files
 .env
