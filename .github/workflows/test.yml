@@ -2,17 +2,18 @@ name: Tests components and stories
 
 on:
   deployment_status:
+  pull_request:
 
 permissions:
   contents: read
 
 jobs:
-  test:
-    if: github.event.deployment_status.state == 'success'
-    name: Test UI
+  test-deployment:
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
+    name: Test UI (deployment)
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.52.0-noble
+      image: mcr.microsoft.com/playwright:v1.57.0-noble
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,3 +29,31 @@ jobs:
         run: npm run test:storybook
         env:
           SB_URL: '${{ github.event.deployment_status.environment_url }}'
+
+  test-pr:
+    if: github.event_name == 'pull_request'
+    name: Test UI (PR)
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.57.0-noble
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Storybook
+        run: npm run build-storybook
+
+      - name: Serve and test Storybook
+        run: |
+          npx --yes serve storybook-static -l 6006 &
+          npx --yes wait-on http://127.0.0.1:6006 --timeout 60000
+          npm run test:storybook
+        env:
+          SB_URL: 'http://127.0.0.1:6006'
