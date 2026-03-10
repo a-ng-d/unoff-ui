@@ -5,15 +5,36 @@ description: Generate a Figma component description from existing source files (
 
 # Skill: Generate Figma Component Documentation
 
-You are helping write a **Figma component description** for a component in the **unoff-ui** design system. The goal is to produce a self-contained, design-tool-ready description that a designer can paste directly into the Figma component's description field — with no reliance on Code Connect or external tooling.
+You are helping write a **Figma component description** for a component in the **unoff-ui** design system. The goal is to produce a self-contained, design-tool-ready description that a designer can read directly in the Figma component's description panel.
 
 The description must be clear, concise, and structured so it is useful to both designers using the Figma component and developers consuming the code.
+
+> **Figma formatting:** always pass the description via the `descriptionMarkdown` parameter of `figma_set_description` — this enables rich text rendering. Supported formatting:
+> - `#` for H1 section titles
+> - `---` for horizontal separators between sections
+> - `1.` numbered lists for all enumerated items (variants, props, states)
+> - `` `backticks` `` for prop names, prop signatures, and variant values
+> - Plain prose for descriptions
 
 ---
 
 ## Step 1 — Identify the component
 
-Ask the user which component to document (if not already specified). Then read the following three source files:
+The user will provide a **Figma URL** pointing to the component node (e.g. `https://www.figma.com/design/RDBmy7x5HfkZHpafVqHNWQ/Unoff-v0.1?node-id=3521-3846`). Extract the `node-id` from the URL.
+
+### 1a — Fetch Figma variants via figma-console MCP
+
+Use the **Figma Desktop Bridge plugin** (figma-console MCP) to retrieve the real component properties and variants directly from Figma:
+
+1. Call `figma_get_component` with the `nodeId` extracted from the URL and the file URL.
+2. From the response, extract: component properties (enum, boolean, text), variant values, and any existing description.
+3. Use these as the authoritative source for the **Variants (Figma)** section of the output.
+
+> **Prerequisite:** the Figma Desktop Bridge plugin must be running in Figma (Right-click → Plugins → Development → Figma Desktop Bridge). If `figma_get_component` fails, use `figma_execute` with `figma.getNodeByIdAsync(nodeId)` to fetch the node directly. If both fail, fall back to inferring variants from the `.figma.tsx` file or Storybook args.
+
+### 1b — Read the source files
+
+Then read the following three source files:
 
 1. **Component TSX** — `src/components/{category}/{kebab-name}/{ComponentName}.tsx`
    - Props interface (types, defaults, JSDoc comments)
@@ -27,55 +48,47 @@ Ask the user which component to document (if not already specified). Then read t
    - Usage guidance already written for that component section
    - Accessibility notes
 
-Also check whether `{ComponentName}.figma.tsx` exists in the component folder — if it does, read it to extract the Figma prop mapping (enum mappings, boolean mappings, string props).
+Also check whether `{ComponentName}.figma.tsx` exists in the component folder — if it does, read it to cross-reference the Figma prop mapping with what was fetched from the MCP.
 
 ---
 
 ## Step 2 — Synthesise and write the description
 
-Produce a single Markdown document structured as follows. **Adapt the content** to the component; the button example below is only a reference for the format and level of detail.
+Produce a rich-text document using the format below. **Adapt the content** to the component; the button example in Step 3 is the reference for format and level of detail.
 
 ---
 
 ### Output format
 
-```
+```text
 {One-sentence summary of the component's purpose and key capabilities.}
 
 ---
 
-{Variant group title (e.g. "Six types", "Three sizes")}
+# {Behaviour / feature section title}
 
-{VARIANT_NAME} — {one-line description of when and why to use this variant}
-{VARIANT_NAME} — {one-line description}
-...
+{prose description with prop names inline}
 
 ---
 
-{Behaviour / feature section title (e.g. "Responsive reflow", "Status badges")}
+# {Another behaviour section if needed}
 
-{prose description of the behaviour, including relevant prop names}
-
----
-
-{Another behaviour section if needed}
-
-...
+1. {VARIANT_NAME} — {one-line description}
+2. {VARIANT_NAME} — {one-line description}
 
 ---
 
-Props (code)
+# Props (code)
 
-{propName}: {type union} — {description, including default if any}
-{propName}: {type union} — {description}
-...
+1. `{propName}: {type}` — {description, including default if non-obvious}
+2. `{propName}: {type}` — {description}
 
 ---
 
-Variants (Figma)
+# Variants (Figma)
 
-{FigmaPropName} — {VALUE_1}, {VALUE_2}, ...
-{FigmaPropName} — {value} (text property, default: "{default}")
+1. `{propName}` — `{VALUE_1}`, `{VALUE_2}`, ...
+2. `{propName}` — text property (default: `"{default}"`)
 ```
 
 ---
@@ -86,30 +99,26 @@ Variants (Figma)
 - One sentence only. State the purpose and the most important capabilities (variants, sizes, states).
 - Do not start with "The {ComponentName} component is…" — start with the function directly.
 
-**Variant sections**
-- Group variants by the prop they come from (e.g. `type`, `size`).
-- Use ALL_CAPS for the Figma variant name, camelCase for the code prop value.
-- One dash-separated line per variant: `VARIANT_NAME — usage guidance`
-- Do not repeat the prop name in the description.
-
 **Behaviour sections**
-- Each notable boolean prop or compound feature gets its own titled section.
+- Each notable prop or compound feature gets its own `#` section.
 - Name the section after what the feature does, not the prop name.
-- Mention the prop(s) involved inline with backtick notation.
-- Keep to 1–3 sentences.
+- Mention prop names inline with backticks.
+- Keep to 1–3 sentences. Use a numbered list when enumerating values (e.g. states, badge types).
 
 **Props (code)**
-- List every prop from the `{ComponentName}Props` interface.
-- Format: `propName: type — description (default: value)` — include the default only when it is non-obvious.
+- List every prop from the `{ComponentName}Props` interface as a numbered list.
+- Format each item as: `` `propName: type` — description ``
+- Include the default only when non-obvious.
 - Use `|`-separated values for union types.
-- For object props, describe the shape inline: `helper: { label, pin?, type? } — tooltip config`
+- For object props: `` `helper: { label, pin?, type? }` — tooltip config ``
 - Order: required props first, then optional props alphabetically.
 
 **Variants (Figma)**
-- Source from the `.figma.tsx` mapping file if it exists; otherwise infer from the component's Storybook argTypes and the Figma-specific props noted in the MDX.
-- Use ALL_CAPS for Figma enum values.
-- For boolean Figma props, write: `hasIcon — TRUE, FALSE`
-- For text/string Figma props, write: `label — text property (default: "Action label")`
+- Preferred source: data from `figma_get_component` / `figma_execute` — use exact property names and values from Figma.
+- Fallback: `.figma.tsx` mapping file → Storybook argTypes → MDX notes.
+- List as numbered list. Wrap both prop name and each value in backticks.
+- For boolean props: `` `hasProp` — `TRUE`, `FALSE` ``
+- For text props: `` `label` — text property (default: `"Action label"`) ``
 
 ---
 
@@ -117,75 +126,80 @@ Variants (Figma)
 
 Use this as a calibration reference for length and style:
 
-```
+```text
 The primary interactive element for triggering actions, navigating, or submitting. Supports six visual types, three sizes, and multiple interactive states.
 
 ---
 
-Six types
+# Six types
 
-PRIMARY — Main call to action; one per distinct task
-SECONDARY — Supporting action with moderate visual weight
-TERTIARY — Low-emphasis action; can also render as an external link
-DESTRUCTIVE — Irreversible actions (delete, remove) — pair with a confirmation step
-ALTERNATIVE — Out-of-hierarchy action needing prominence without primary weight
-ICON — Compact toolbar action; always provide a helper label
+1. PRIMARY — Main call to action; one per distinct task
+2. SECONDARY — Supporting action with moderate visual weight
+3. TERTIARY — Low-emphasis action; can also render as an external link
+4. DESTRUCTIVE — Irreversible actions (delete, remove) — pair with a confirmation step
+5. ALTERNATIVE — Out-of-hierarchy action needing prominence without primary weight
+6. ICON — Compact toolbar action; always provide a helper label
 
 ---
 
-Responsive reflow
+# Responsive reflow
 
 `shouldReflow` swaps the label for an icon when the viewport drops below 460 px, keeping toolbars usable on small screens without a separate mobile variant.
 
 ---
 
-Status badges
+# Status badges
 
 A `warning`, `isBlocked`, or `isNew` flag appends a status indicator next to the button:
 
-warning — shows an IconChip with a caution tooltip
-isBlocked — shows a Pro badge; `onUnblock` callback lets the user upgrade
-isNew — shows a New badge
+1. warning — shows an IconChip with a caution tooltip
+2. isBlocked — shows a Pro badge; `onUnblock` callback lets the user upgrade
+3. isNew — shows a New badge
 
 ---
 
-Props (code)
+# Props (code)
 
-type: "primary" | "secondary" | "tertiary" | "destructive" | "alternative" | "icon" — visual style
-size: "small" | "default" | "large" — button size (default: "default")
-label: string — text label
-icon: IconList — icon name to display alongside the label
-state: "default" | "selected" — visual state for icon-type buttons (default: "default")
-helper: { label, pin?, type? } — tooltip shown on hover / focus
-warning: { label, pin?, type? } — warning badge with tooltip
-preview: { image, text, pin? } — rich preview tooltip with image
-shouldReflow: { isEnabled, icon } — responsive icon swap below 460 px
-isLoading: boolean — shows a spinner and sets aria-busy (default: false)
-isBlocked: boolean — disables the button and shows a Pro badge (default: false)
-isDisabled: boolean — disables the button (default: false)
-isNew: boolean — shows a New badge (default: false)
-isLink: boolean — renders an <a> tag styled as a button (default: false)
-url: string — href for link buttons
-action: MouseEventHandler & KeyboardEventHandler — click / key handler
-onUnblock: MouseEventHandler & KeyboardEventHandler — called when the Pro badge is clicked
+1. `type: "primary" | "secondary" | "tertiary" | "destructive" | "alternative" | "icon"` — visual style
+2. `size: "small" | "default" | "large"` — button size (default: "default")
+3. `label: string` — text label
+4. `icon: IconList` — icon name to display alongside the label
+5. `state: "default" | "selected"` — visual state for icon-type buttons (default: "default")
+6. `helper: { label, pin?, type? }` — tooltip shown on hover / focus
+7. `warning: { label, pin?, type? }` — warning badge with tooltip
+8. `preview: { image, text, pin? }` — rich preview tooltip with image
+9. `shouldReflow: { isEnabled, icon }` — responsive icon swap below 460 px
+10. `isLoading: boolean` — shows a spinner and sets aria-busy (default: false)
+11. `isBlocked: boolean` — disables the button and shows a Pro badge (default: false)
+12. `isDisabled: boolean` — disables the button (default: false)
+13. `isNew: boolean` — shows a New badge (default: false)
+14. `isLink: boolean` — renders an <a> tag styled as a button (default: false)
+15. `url: string` — href for link buttons
+16. `action: MouseEventHandler & KeyboardEventHandler` — click / key handler
+17. `onUnblock: MouseEventHandler & KeyboardEventHandler` — called when the Pro badge is clicked
 
 ---
 
-Variants (Figma)
+# Variants (Figma)
 
-type — PRIMARY, SECONDARY, TERTIARY, DESTRUCTIVE, ALTERNATIVE, ICON
-state — DEFAULT, HOVER, PRESSED, FOCUS, DISABLED
-size — SMALL, DEFAULT, LARGE
-hasIcon — TRUE, FALSE
-hasMultipleActions — TRUE, FALSE
-label — text property (default: "Action label")
+1. `type` — `PRIMARY`, `SECONDARY`, `TERTIARY`, `DESTRUCTIVE`, `ALTERNATIVE`, `ICON`
+2. `state` — `DEFAULT`, `HOVER`, `PRESSED`, `FOCUS`, `DISABLED`
+3. `size` — `SMALL`, `DEFAULT`, `LARGE`
+4. `hasIcon` — `TRUE`, `FALSE`
+5. `hasMultipleActions` — `TRUE`, `FALSE`
+6. `label` — text property (default: `"Action label"`)
 ```
 
 ---
 
-## Step 4 — Deliver the output
+## Step 4 — Write the description to Figma
 
-Present the final description in a fenced code block so the user can copy it directly. Then briefly note any props or Figma variants you could not infer (e.g. missing `.figma.tsx` file, undocumented Figma props) so the user can fill in those gaps manually.
+Once the description is finalised, call `figma_set_description` with **both** parameters:
+
+- `description`: plain-text fallback (summary sentence only)
+- `descriptionMarkdown`: the full rich-text document
+
+Also present the final `descriptionMarkdown` content in a fenced code block so the user can review it. Note any props or Figma variants that could not be confirmed (e.g. MCP unavailable, missing `.figma.tsx`) so the user can fill gaps manually.
 
 ---
 
