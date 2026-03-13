@@ -170,6 +170,14 @@ const colorToCSS = (raw, tokensSet) => {
 }
 
 export const cssTransform = (token, { tokensSet, transformAlias }) => {
+  if (token.$type === 'dimension') {
+    if (token.aliasChain?.[0])
+      return transformAlias(tokensSet[token.aliasChain[0]])
+    const v = token.$value
+    if (typeof v === 'string') return v
+    if (v && typeof v === 'object' && 'value' in v)
+      return v.value === 0 ? '0' : `${v.value}${v.unit ?? ''}`
+  }
   if (token.$type === 'shadow' || token.$type === 'boxShadow') {
     if (token.aliasOf) {
       const aliasToken = tokensSet[token.aliasOf]
