@@ -70,7 +70,7 @@ export interface DropzoneState {
 }
 
 export default class Dropzone extends React.Component<DropzoneProps, DropzoneState> {
-  stopLoading: NodeJS.Timeout | undefined
+  stopLoading: number | undefined
 
   static defaultProps: Partial<DropzoneProps> = {
     acceptedMimeTypes: ['image/jpeg', 'image/png', 'application/pdf'],
