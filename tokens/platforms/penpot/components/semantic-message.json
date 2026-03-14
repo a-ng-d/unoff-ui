@@ -4,10 +4,6 @@
       "$value": "{size.pos.xxsmall}",
       "$type": "dimension"
     },
-    "maxWidth": {
-      "$value": "400px",
-      "$type": "dimension"
-    },
     "padding": {
       "default": {
         "top": {
