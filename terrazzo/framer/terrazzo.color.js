@@ -2,6 +2,7 @@ import css from '@terrazzo/plugin-css'
 import { defineConfig } from '@terrazzo/cli'
 import tokensStudioCompat, {
   cssTransform,
+  wrapFallbacks,
 } from '../plugins/tokens-studio-compat.js'
 
 export default defineConfig({
@@ -16,11 +17,15 @@ export default defineConfig({
       permutations: [
         {
           input: { mode: 'framerLight' },
-          prepare: (css) => `[data-mode="framer-light"] {\n  ${css}\n}`,
+          prepare: wrapFallbacks(
+            (css) => `[data-mode="framer-light"] {\n  ${css}\n}`
+          ),
         },
         {
           input: { mode: 'framerDark' },
-          prepare: (css) => `[data-mode="framer-dark"] {\n  ${css}\n}`,
+          prepare: wrapFallbacks(
+            (css) => `[data-mode="framer-dark"] {\n  ${css}\n}`
+          ),
         },
       ],
     }),

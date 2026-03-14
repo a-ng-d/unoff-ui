@@ -40,6 +40,40 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
  *                  layer.offsetX/x        aliases resolved via tokensSet
  *                  layer.inset / type: "dropShadow" / "innerShadow"
  *
+ *   wrapFallbacks(prepare) — wraps a permutation prepare function so that every
+ *     CSS custom property ending in `-default` is rewritten with a var() bridge,
+ *     stripping the `-default` suffix from the referenced variable name:
+ *       --foo-bar-default: rgb(…)  →  --foo-bar-default: var(--foo-bar, rgb(…))
+ *     This bridges two environments simultaneously:
+ *       - Storybook: --foo-bar is not set → the raw fallback value is used
+ *       - Figma plugin (when figma-plugin.scss is loaded): Figma injects --foo-bar
+ *         natively → the var() picks it up
+ *     This is NOT a cyclic reference — the two property names are different.
+ *     Non-default tokens keep their raw values as-is (no passthrough, no cycle).
+ *
+ *     Usage:
+ *       import tokensStudioCompat, { cssTransform, wrapFallbacks }
+ *         from '../plugins/tokens-studio-compat.js'
+ *       prepare: wrapFallbacks(css => `[data-mode="figma-light"] {\n  ${css}\n}`)
+ *
+ *   wrapPassthrough(selector) — produce a lightweight stylesheet for plugin
+ *     contexts where a platform (e.g. Figma) already injects its own CSS
+ *     custom properties. Scans the token CSS for `-default` properties and
+ *     emits ONLY those, stripping the suffix from the referenced name and
+ *     using no fallback value:
+ *       --foo-bar-default: rgb(…)  →  --foo-bar-default: var(--foo-bar)
+ *     Non-default tokens are omitted entirely — they share the exact same name
+ *     as the platform's native variables, so the platform's injected `:root`
+ *     values are picked up directly without any declaration needed.
+ *     Load the resulting file INSTEAD of figma-colors.scss in the plugin so
+ *     the platform's colors apply for all products (FigJam, Slides, Buzz…)
+ *     regardless of data-mode.
+ *
+ *     Usage:
+ *       import tokensStudioCompat, { cssTransform, wrapPassthrough }
+ *         from '../plugins/tokens-studio-compat.js'
+ *       prepare: wrapPassthrough(':root')
+ *
  * TYPE_MAP (shared by all three exports):
  *   fontFamilies → fontFamily  (DTCG)
  *   fontWeights  → fontWeight  (DTCG)
@@ -200,6 +234,44 @@ export const cssTransform = (token, { tokensSet, transformAlias }) => {
       })
       .join(', ')
   }
+}
+
+/**
+ * Wraps a permutation prepare function so that every CSS custom property is
+ * rewritten to use a var() with the raw value as fallback:
+ *   --foo-bar-hover: red    →  --foo-bar-hover: var(--foo-bar-hover, red)
+ *   --foo-bar-default: red  →  --foo-bar-default: var(--foo-bar, red)
+ *
+ * For tokens ending in -default the suffix is stripped from the var() name,
+ * so consumers can override the default by setting the shorter alias.
+ * All other tokens keep the full var() name.
+ *
+ * @param {(css: string) => string} prepare - The original prepare function.
+ * @returns {(css: string) => string}
+ */
+export const wrapFallbacks = (prepare) => (css) => {
+  const patched = css.replace(
+    /(--[\w][\w-]*)-default: ([^;]+);/g,
+    '$1-default: var($1, $2);',
+  )
+  return prepare(patched)
+}
+
+/**
+ * Produce a passthrough stylesheet for plugin contexts where the platform
+ * (e.g. Figma) already injects its own CSS custom properties at :root.
+ * Only emits -default tokens mapped to var(--base-name) with no fallback.
+ * Non-default tokens are omitted — they share the platform's native names.
+ *
+ * @param {string} selector - The CSS selector to wrap the block in (e.g. ':root').
+ * @returns {(css: string) => string}
+ */
+export const wrapPassthrough = (selector) => (css) => {
+  const lines = []
+  for (const [, base] of css.matchAll(/(--[\w][\w-]*)-default: [^;]+;/g)) {
+    lines.push(`  ${base}-default: var(${base});`)
+  }
+  return `${selector} {\n${lines.join('\n')}\n}\n`
 }
 
 export default function tokensStudioCompat() {

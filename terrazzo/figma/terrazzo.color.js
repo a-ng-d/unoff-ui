@@ -2,6 +2,8 @@ import css from '@terrazzo/plugin-css'
 import { defineConfig } from '@terrazzo/cli'
 import tokensStudioCompat, {
   cssTransform,
+  wrapFallbacks,
+  wrapPassthrough,
 } from '../plugins/tokens-studio-compat.js'
 
 export default defineConfig({
@@ -16,15 +18,31 @@ export default defineConfig({
       permutations: [
         {
           input: { mode: 'figmaLight' },
-          prepare: (css) => `[data-mode="figma-light"] {\n  ${css}\n}`,
+          prepare: wrapFallbacks(
+            (css) => `[data-mode="figma-light"] {\n  ${css}\n}`
+          ),
         },
         {
           input: { mode: 'figmaDark' },
-          prepare: (css) => `[data-mode="figma-dark"] {\n  ${css}\n}`,
+          prepare: wrapFallbacks(
+            (css) => `[data-mode="figma-dark"] {\n  ${css}\n}`
+          ),
         },
         {
           input: { mode: 'figjam' },
-          prepare: (css) => `[data-mode="figjam"] {\n  ${css}\n}`,
+          prepare: wrapFallbacks(
+            (css) => `[data-mode="figjam"] {\n  ${css}\n}`
+          ),
+        },
+      ],
+    }),
+    css({
+      filename: 'figma-plugin.scss',
+      transform: cssTransform,
+      permutations: [
+        {
+          input: { mode: 'figmaLight' },
+          prepare: wrapPassthrough(':root'),
         },
       ],
     }),
