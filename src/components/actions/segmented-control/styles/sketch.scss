@@ -9,7 +9,7 @@
   --segmented-control-border-width: var(--size-null);
   --segmented-control-gap: var(--border-radius-null);
   --segmented-control-item-background-color-active-default: var(--sketch-color-accent-secondary);
-  --segmented-control-item-background-color-active-disabled: var(--sketch-color-accent-secondary);
+  --segmented-control-item-background-color-active-disabled: var(--sketch-color-accent-tertiary);
   --segmented-control-item-background-color-active-focus: var(--sketch-color-accent-secondary);
   --segmented-control-item-background-color-active-hover: var(--sketch-color-accent-secondary);
   --segmented-control-item-background-color-default-default: var(--grey-transparent);
@@ -43,7 +43,7 @@
   --segmented-control-item-gap: var(--size-null);
   --segmented-control-item-height: var(--size-pos-medium);
   --segmented-control-item-icon-color-active-default: var(--sketch-color-foreground-onaccent-default);
-  --segmented-control-item-icon-color-active-disabled: var(--sketch-color-foreground-onaccent-default);
+  --segmented-control-item-icon-color-active-disabled: var(--sketch-color-foreground-onaccent-disabled);
   --segmented-control-item-icon-color-active-focus: var(--sketch-color-foreground-onaccent-default);
   --segmented-control-item-icon-color-active-hover: var(--sketch-color-foreground-onaccent-default);
   --segmented-control-item-icon-color-default-default: var(--sketch-color-foreground-secondary);

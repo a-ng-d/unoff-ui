@@ -45,7 +45,7 @@
               "$type": "color"
             },
             "disabled": {
-              "$value": "{sketch.color.accent.secondary}",
+              "$value": "{sketch.color.accent.tertiary}",
               "$type": "color"
             }
           }
@@ -201,7 +201,7 @@
               "$type": "color"
             },
             "disabled": {
-              "$value": "{sketch.color.foreground.onaccent.default}",
+              "$value": "{sketch.color.foreground.onaccent.disabled}",
               "$type": "color"
             }
           }

@@ -27,7 +27,7 @@
               "$type": "color"
             },
             "disabled": {
-              "$value": "{figma.color.bg.tertiary}",
+              "$value": "{figma.color.bg.secondary}",
               "$type": "color"
             }
           },

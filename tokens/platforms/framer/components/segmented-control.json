@@ -27,7 +27,7 @@
               "$type": "color"
             },
             "disabled": {
-              "$value": "{framer.color.bg.default}",
+              "$value": "{framer.color.bg.secondary}",
               "$type": "color"
             }
           },
@@ -45,7 +45,7 @@
               "$type": "color"
             },
             "disabled": {
-              "$value": "{framer.color.bg.secondary}",
+              "$value": "{framer.color.bg.default}",
               "$type": "color"
             }
           }
