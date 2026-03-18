@@ -70,6 +70,7 @@ export default class ActionsItem extends React.Component<ActionsItemProps> {
     isInteractive: false,
   }
 
+  // Render
   render() {
     const {
       id,

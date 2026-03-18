@@ -210,6 +210,7 @@ export default class Input extends React.Component<InputProps, InputState> {
     this.textareaRef = React.createRef()
   }
 
+  // Lifecycle
   componentDidMount(): void {
     const { isGrowing } = this.props
 

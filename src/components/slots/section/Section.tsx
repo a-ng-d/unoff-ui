@@ -43,6 +43,7 @@ export default class Section extends React.Component<SectionProps> {
     return styles
   }
 
+  // Render
   render() {
     const { id, title, border, body } = this.props
 

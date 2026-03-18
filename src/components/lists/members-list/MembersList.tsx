@@ -47,6 +47,7 @@ export default class MembersList extends React.Component<
     }
   }
 
+  // Render
   render() {
     const { members, numberOfAvatarsDisplayed, isInverted } = this.props
     const { activeTooltipIndex, isMembersListVisible } = this.state

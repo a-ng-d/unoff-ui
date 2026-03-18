@@ -50,6 +50,7 @@ export default class SimpleItem extends React.Component<SimpleItemProps> {
     alignment: 'DEFAULT',
   }
 
+  // Render
   render() {
     const {
       id,

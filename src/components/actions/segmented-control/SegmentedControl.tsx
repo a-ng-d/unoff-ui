@@ -123,6 +123,7 @@ export default class SegmentedControl extends React.Component<
       )
   }
 
+  // Render
   render() {
     const { items, active, isBlocked, action } = this.props
     const { activeTooltipId } = this.state

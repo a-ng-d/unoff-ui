@@ -90,6 +90,7 @@ export default class Bar extends React.Component<BarProps> {
     return styles
   }
 
+  // Render
   render() {
     const {
       id,

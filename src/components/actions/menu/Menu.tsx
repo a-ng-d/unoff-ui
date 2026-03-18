@@ -137,6 +137,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
     this.handleClickOutside = this.handleClickOutside.bind(this)
   }
 
+  // Lifecycle
   componentDidMount = () =>
     document.addEventListener('mousedown', this.handleClickOutside)
 
@@ -267,6 +268,7 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
       setTimeout(() => this.actionsListRef.current?.focusFirstMenuItem(), 0)
   }
 
+  // Render
   render() {
     const {
       id,

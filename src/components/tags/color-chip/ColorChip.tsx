@@ -48,6 +48,7 @@ export default class ColorChip extends React.Component<
     }
   }
 
+  // Render
   render() {
     const { color, width, height, isRounded, helper } = this.props
     const { isTooltipVisible } = this.state

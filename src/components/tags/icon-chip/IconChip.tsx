@@ -56,6 +56,7 @@ export default class IconChip extends React.Component<
     }
   }
 
+  // Render
   render() {
     const { iconType, iconName, iconLetter, text, pin, type } = this.props
     const { isTooltipVisible } = this.state

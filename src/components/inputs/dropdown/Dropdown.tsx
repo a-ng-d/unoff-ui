@@ -161,6 +161,7 @@ export default class Dropdown extends React.Component<
     this.handleClickOutside = this.handleClickOutside.bind(this)
   }
 
+  // Lifecycle
   componentDidMount = () => {
     document.addEventListener('mousedown', this.handleClickOutside)
     window.addEventListener('resize', this.handleResize)

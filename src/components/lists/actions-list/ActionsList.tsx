@@ -143,6 +143,7 @@ export default class ActionsList extends React.Component<
     }
   }
 
+  // Lifecycle
   componentDidMount = () =>
     document.addEventListener('mousemove', this.handleMouseMove)
 
@@ -604,6 +605,7 @@ export default class ActionsList extends React.Component<
     )
   }
 
+  // Render
   render() {
     const { options, direction, shouldScroll, menuRef, canBeSearched } =
       this.props

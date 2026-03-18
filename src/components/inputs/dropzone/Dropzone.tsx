@@ -236,6 +236,7 @@ export default class Dropzone extends React.Component<
     })
   }
 
+  // Render
   render() {
     const {
       message,
