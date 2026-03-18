@@ -427,7 +427,7 @@ export const SearchableDropdown: Story = {
     await waitFor(
       async () => {
         const searchInput = document.querySelector(
-          '.select-menu__search__field'
+          '.select-menu__search .input__field'
         ) as HTMLInputElement
         await expect(searchInput).toBeInTheDocument()
 
