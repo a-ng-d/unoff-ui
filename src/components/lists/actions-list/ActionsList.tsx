@@ -574,7 +574,10 @@ export default class ActionsList extends React.Component<
 
           return null
         }}
-        onMouseDown={!option.isBlocked ? option.action : undefined}
+        onMouseDown={(e) => {
+          if (!option.isBlocked) option.action?.(e)
+          onCancellation?.()
+        }}
       >
         {selected?.split(', ').filter((value) => value === option.value)
           .length === 1 && (
