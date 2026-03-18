@@ -289,6 +289,22 @@
     height: auto;
   }
 
+  &__menu--searchable {
+    li.select-menu__search {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: var(--actions-list-background-color);
+    }
+
+    li.select-menu__search + li[data-role='SEPARATOR'] {
+      position: sticky;
+      top: var(--input-height);
+      z-index: 1;
+      background-color: var(--actions-list-background-color);
+    }
+  }
+
   &__submenu {
     position: absolute;
   }

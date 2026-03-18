@@ -573,6 +573,7 @@ export default class ActionsList extends React.Component<
               ? 'select-menu__menu--right'
               : 'select-menu__menu--left',
             shouldScroll && 'select-menu__menu--scrolling',
+            canBeSearched && 'select-menu__menu--searchable',
           ])}
           onScroll={this.onScroll}
           ref={menuRef}
