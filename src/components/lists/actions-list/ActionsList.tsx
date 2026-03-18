@@ -85,6 +85,8 @@ export default class ActionsList extends React.Component<
 > {
   private scrollInterval: number | null
   private subMenuContainerRef: React.RefObject<HTMLDivElement>
+  private movementXHistory: number[]
+  private submenuChangeTimeout: ReturnType<typeof setTimeout> | null
 
   static defaultProps: Partial<ActionsListProps> = {
     direction: 'RIGHT',
@@ -106,6 +108,8 @@ export default class ActionsList extends React.Component<
     }
     this.scrollInterval = null
     this.subMenuContainerRef = React.createRef<HTMLDivElement>()
+    this.movementXHistory = []
+    this.submenuChangeTimeout = null
   }
 
   componentDidUpdate(
@@ -138,6 +142,68 @@ export default class ActionsList extends React.Component<
       }
     }
   }
+
+  componentDidMount = () =>
+    document.addEventListener('mousemove', this.handleMouseMove)
+
+  componentWillUnmount = () => {
+    document.removeEventListener('mousemove', this.handleMouseMove)
+    this.clearSubmenuTimeout()
+  }
+
+  handleMouseMove = (e: MouseEvent) => {
+    this.movementXHistory.push(e.movementX)
+    if (this.movementXHistory.length > 5) this.movementXHistory.shift()
+  }
+
+  clearSubmenuTimeout = () => {
+    if (this.submenuChangeTimeout) {
+      clearTimeout(this.submenuChangeTimeout)
+      this.submenuChangeTimeout = null
+    }
+  }
+
+  isMovingTowardsSubmenu = (): boolean => {
+    const { direction } = this.props
+    if (this.movementXHistory.length === 0) return false
+    const avg =
+      this.movementXHistory.reduce((a, b) => a + b, 0) /
+      this.movementXHistory.length
+    return direction === 'RIGHT' ? avg > 0 : avg < 0
+  }
+
+  onMouseEnterGroup = (value: string) => {
+    const { openedGroup } = this.state
+
+    this.clearSubmenuTimeout()
+
+    if (openedGroup === 'EMPTY' || openedGroup === value) {
+      this.setState({ openedGroup: value })
+      return
+    }
+
+    if (this.isMovingTowardsSubmenu())
+      this.submenuChangeTimeout = setTimeout(() => {
+        this.setState({ openedGroup: value })
+        this.submenuChangeTimeout = null
+      }, 350)
+    else this.setState({ openedGroup: value })
+  }
+
+  onMouseLeaveGroup = () => {
+    if (this.isMovingTowardsSubmenu()) {
+      this.clearSubmenuTimeout()
+      this.submenuChangeTimeout = setTimeout(() => {
+        this.setState({ openedGroup: 'EMPTY' })
+        this.submenuChangeTimeout = null
+      }, 350)
+    } else {
+      this.clearSubmenuTimeout()
+      this.setState({ openedGroup: 'EMPTY' })
+    }
+  }
+
+  onMouseEnterSubmenu = () => this.clearSubmenuTimeout()
 
   // Direct Actions
   focusFirstMenuItem = () => {
@@ -280,6 +346,7 @@ export default class ActionsList extends React.Component<
       <div
         className="select-menu__submenu"
         role="menu"
+        onMouseEnter={this.onMouseEnterSubmenu}
         style={{
           visibility: isVisible ? 'visible' : 'hidden',
         }}
@@ -446,10 +513,8 @@ export default class ActionsList extends React.Component<
 
           return null
         }}
-        onMouseEnter={() =>
-          this.setState({ openedGroup: option.value ?? 'EMPTY' })
-        }
-        onMouseLeave={() => this.setState({ openedGroup: 'EMPTY' })}
+        onMouseEnter={() => this.onMouseEnterGroup(option.value ?? 'EMPTY')}
+        onMouseLeave={this.onMouseLeaveGroup}
         onFocus={() => null}
         onBlur={() => null}
       >
