@@ -1,127 +1,127 @@
 {
   "card": {
     "gap": {
-      "$value": "{size.pos.xxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxsmall}"
     },
     "radius": {
-      "$value": "{border.radius.xlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xlarge}"
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "right": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "bottom": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "left": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       }
     },
     "width": {
-      "$value": "200px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "200px"
     },
     "ratio": {
-      "$value": "2 / 1",
-      "$type": "string"
+      "$type": "string",
+      "$value": "2 / 1"
     },
     "background": {
       "color": {
         "default": {
-          "$value": "{figma.color.bg.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.default}"
         },
         "hover": {
-          "$value": "{figma.color.bg.hover}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.hover}"
         },
         "focus": {
-          "$value": "{figma.color.bg.selected.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.selected.default}"
         }
       }
     },
     "border": {
       "color": {
         "default": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "hover": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "focus": {
-          "$value": "{figma.color.border.selected.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.border.selected.default}"
         }
       },
       "width": {
         "default": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "hover": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "focus": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         }
       },
       "offset": {
         "default": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "hover": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "focus": {
-          "$value": "{size.neg.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.neg.unit}"
         }
       }
     },
     "actions": {
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       }
     },
     "content": {
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       }
     }
   }

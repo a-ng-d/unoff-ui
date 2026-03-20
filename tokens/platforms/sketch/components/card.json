@@ -1,127 +1,127 @@
 {
   "card": {
     "gap": {
-      "$value": "{size.pos.xxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxsmall}"
     },
     "radius": {
-      "$value": "{size.pos.xsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xsmall}"
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "right": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "bottom": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "left": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       }
     },
     "width": {
-      "$value": "200px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "200px"
     },
     "ratio": {
-      "$value": "2 / 1",
-      "$type": "string"
+      "$type": "string",
+      "$value": "2 / 1"
     },
     "background": {
       "color": {
         "default": {
-          "$value": "{sketch.color.background.primary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.background.primary}"
         },
         "hover": {
-          "$value": "{sketch.color.background.secondary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.background.secondary}"
         },
         "focus": {
-          "$value": "{sketch.color.accent.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.accent.disabled}"
         }
       }
     },
     "border": {
       "color": {
         "default": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "hover": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "focus": {
-          "$value": "{sketch.color.accent.primary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.accent.primary}"
         }
       },
       "width": {
         "default": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "hover": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "focus": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         }
       },
       "offset": {
         "default": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "hover": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "focus": {
-          "$value": "{size.neg.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.neg.unit}"
         }
       }
     },
     "actions": {
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       }
     },
     "content": {
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       }
     }
   }

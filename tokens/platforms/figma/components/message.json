@@ -2,111 +2,111 @@
   "message": {
     "padding": {
       "top": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "right": {
-        "$value": "{size.pos.msmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.msmall}"
       },
       "bottom": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "left": {
-        "$value": "{size.pos.msmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.msmall}"
       }
     },
     "gap": {
-      "$value": "{size.pos.xxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxsmall}"
     },
     "text": {
       "color": {
         "default": {
-          "$value": "{figma.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.text.default}"
         },
         "disabled": {
-          "$value": "{figma.color.text.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.text.disabled}"
         }
       }
     },
     "icon": {
       "color": {
         "default": {
-          "$value": "{figma.color.icon.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.icon.default}"
         },
         "disabled": {
-          "$value": "{figma.color.icon.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.icon.disabled}"
         }
       }
     },
     "message": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         },
         "right": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "bottom": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         },
         "left": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       }
     },
     "ticker": {
       "height": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "maxWidth": {
-        "$value": "640px",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "640px"
       },
       "gap": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         }
       },
       "mask": {
         "background": {
           "color": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           }
         },
         "width": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         }
       }
     }

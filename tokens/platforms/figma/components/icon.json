@@ -1,27 +1,27 @@
 {
   "icon": {
     "width": {
-      "$value": "{size.pos.small}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.small}"
     },
     "height": {
-      "$value": "{size.pos.small}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.small}"
     },
     "picto": {
       "color": {
-        "$value": "{figma.color.icon.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.icon.default}"
       }
     },
     "letter": {
       "color": {
-        "$value": "{figma.color.text.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.default}"
       },
       "textSize": {
-        "$value": "{font.size.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{font.size.xsmall}"
       }
     }
   }

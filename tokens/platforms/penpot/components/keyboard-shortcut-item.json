@@ -2,109 +2,109 @@
   "keyboardShortcutItem": {
     "padding": {
       "top": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "right": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "bottom": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "left": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       }
     },
     "gap": {
-      "$value": "{size.pos.xxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxsmall}"
     },
     "minHeight": {
-      "$value": "{size.pos.medium}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.medium}"
     },
     "background": {
       "color": {
-        "$value": "{penpot.color.background.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{penpot.color.background.primary}"
       }
     },
     "key": {
       "radius": {
-        "$value": "{border.radius.xlarge}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{border.radius.xlarge}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       },
       "minWidth": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       },
       "height": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "background": {
         "color": {
-          "$value": "{penpot.color.background.secondary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{penpot.color.background.secondary}"
         }
       },
       "border": {
         "width": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         },
         "offset": {
-          "$value": "{size.neg.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.neg.unit}"
         },
         "color": {
-          "$value": "{penpot.color.background.quaternary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{penpot.color.background.quaternary}"
         }
       }
     },
     "separator": {
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         }
       }
     }

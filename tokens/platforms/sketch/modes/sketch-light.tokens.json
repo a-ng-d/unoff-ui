@@ -1,12 +1,28 @@
 {
   "$extensions": {
-    "com.figma.modeName": "Sketch Light"
+    "com": {
+      "figma": {
+        "modeName": {
+          "$type": "other",
+          "$value": "Sketch Light"
+        }
+      }
+    }
   },
   "sketch": {
-    "$type": "color",
     "$extensions": {
-      "com.figma.scopes": ["ALL_SCOPES"]
+      "com": {
+        "figma": {
+          "scopes": {
+            "0": {
+              "$type": "other",
+              "$value": "ALL_SCOPES"
+            }
+          }
+        }
+      }
     },
+    "$type": "color",
     "color": {
       "accent": {
         "default": {

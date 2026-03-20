@@ -1,72 +1,72 @@
 {
   "sectionTitle": {
     "height": {
-      "$value": "{size.pos.medium}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.medium}"
     },
     "gap": {
-      "$value": "{size.pos.xxxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxxsmall}"
     },
     "padding": {
       "top": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "right": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       },
       "bottom": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "left": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       }
     },
     "text": {
       "font": {
         "family": {
-          "$value": "{text.fontFamily}",
-          "$type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{text.fontFamily}"
         },
         "size": {
-          "$value": "{font.size.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.size.small}"
         },
         "weight": {
-          "$value": "{font.weight.medium}",
-          "$type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{font.weight.medium}"
         }
       },
       "letterSpacing": {
-        "$value": "{font.letterSpacing.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{font.letterSpacing.pos.medium}"
       },
       "lineHeight": {
-        "$value": "{font.lineHeight.default}",
-        "$type": "number"
+        "$type": "number",
+        "$value": "{font.lineHeight.default}"
       },
       "color": {
-        "$value": "{sketch.color.foreground.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.foreground.primary}"
       },
       "transform": {
-        "$value": "none",
-        "$type": "string"
+        "$type": "string",
+        "$value": "none"
       }
     },
     "info": {
       "icon": {
         "width": {
-          "$value": "{size.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.medium}"
         },
         "height": {
-          "$value": "{size.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.medium}"
         }
       }
     }

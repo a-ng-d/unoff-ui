@@ -1,20 +1,52 @@
 {
-  "name": "Sketch Colors",
-  "version": "2025.10",
-  "description": "Color tokens for Sketch platform, including light/dark modes",
-  "resolutionOrder": [{ "$ref": "#/modifiers/mode" }],
+  "name": {
+    "$type": "other",
+    "$value": "Sketch Colors"
+  },
+  "version": {
+    "$type": "other",
+    "$value": "2025.10"
+  },
+  "description": {
+    "$type": "other",
+    "$value": "Color tokens for Sketch platform, including light/dark modes"
+  },
+  "resolutionOrder": {
+    "0": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/modifiers/mode"
+      }
+    }
+  },
   "modifiers": {
     "mode": {
-      "description": "Sketch light/dark modes",
-      "contexts": {
-        "sketchLight": [
-          { "$ref": "./platforms/sketch/modes/sketch-light.tokens.json" }
-        ],
-        "sketchDark": [
-          { "$ref": "./platforms/sketch/modes/sketch-dark.tokens.json" }
-        ]
+      "description": {
+        "$type": "other",
+        "$value": "Sketch light/dark modes"
       },
-      "default": "sketchLight"
+      "contexts": {
+        "sketchLight": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/sketch/modes/sketch-light.tokens.json"
+            }
+          }
+        },
+        "sketchDark": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/sketch/modes/sketch-dark.tokens.json"
+            }
+          }
+        }
+      },
+      "default": {
+        "$type": "other",
+        "$value": "sketchLight"
+      }
     }
   }
 }

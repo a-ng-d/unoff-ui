@@ -2,20 +2,20 @@
   "menu": {
     "position": {
       "topRight": {
-        "$value": "{size.neg.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.xxsmall}"
       },
       "topLeft": {
-        "$value": "{size.neg.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.xxsmall}"
       },
       "bottomRight": {
-        "$value": "{size.pos.large}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.large}"
       },
       "bottomLeft": {
-        "$value": "{size.pos.large}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.large}"
       }
     }
   }

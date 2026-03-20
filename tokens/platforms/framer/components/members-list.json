@@ -1,61 +1,61 @@
 {
   "membersList": {
     "gap": {
-      "$value": "{size.neg.xxxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.neg.xxxsmall}"
     },
     "avatar": {
       "radius": {
-        "$value": "{border.radius.xlarge}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{border.radius.xlarge}"
       },
       "width": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "height": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "border": {
         "width": {
-          "$value": "{size.pos.xunit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xunit}"
         },
         "offset": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "color": {
-          "$value": "{framer.color.bg.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.bg.default}"
         }
       }
     },
     "more": {
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       }
     },
     "text": {
       "color": {
-        "$value": "{framer.color.text.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.text.default}"
       }
     }
   }

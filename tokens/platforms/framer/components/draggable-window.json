@@ -1,71 +1,71 @@
 {
   "draggableWindow": {
     "width": {
-      "$value": "296px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "296px"
     },
     "radius": {
-      "$value": "{border.radius.xxlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xxlarge}"
     },
     "shadow": {
-      "$value": "{elevation.500ModalWindow}",
-      "$type": "shadow"
+      "$type": "shadow",
+      "$value": "{elevation.500ModalWindow}"
     },
     "background": {
       "color": {
-        "$value": "{framer.color.bg.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.bg.default}"
       }
     },
     "border": {
       "color": {
-        "$value": "{grey.transparent}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{grey.transparent}"
       },
       "width": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "offset": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "header": {
       "border": {
         "width": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         },
         "color": {
-          "$value": "{framer.color.divider}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.divider}"
         }
       }
     },
     "content": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xmsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xmsmall}"
         },
         "right": {
-          "$value": "{size.pos.xmsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xmsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xmsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xmsmall}"
         },
         "left": {
-          "$value": "{size.pos.xmsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xmsmall}"
         }
       },
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       }
     }
   }

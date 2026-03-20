@@ -1,27 +1,74 @@
 {
-  "name": "Commons",
-  "version": "2025.10",
-  "description": "Common design tokens shared across all platforms (typography, spacing, border-radius, shadows with light/dark modes)",
-  "resolutionOrder": [
-    { "$ref": "#/sets/base" },
-    { "$ref": "#/modifiers/mode" }
-  ],
+  "name": {
+    "$type": "other",
+    "$value": "Commons"
+  },
+  "version": {
+    "$type": "other",
+    "$value": "2025.10"
+  },
+  "description": {
+    "$type": "other",
+    "$value": "Common design tokens shared across all platforms (typography, spacing, border-radius, shadows with light/dark modes)"
+  },
+  "resolutionOrder": {
+    "0": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/sets/base"
+      }
+    },
+    "1": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/modifiers/mode"
+      }
+    }
+  },
   "sets": {
     "base": {
-      "description": "Base common tokens (typography, spacing, border-radius, grey scale, shadow colors)",
-      "sources": [{ "$ref": "./commons/commons.tokens.json" }]
+      "description": {
+        "$type": "other",
+        "$value": "Base common tokens (typography, spacing, border-radius, grey scale, shadow colors)"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./commons/commons.tokens.json"
+          }
+        }
+      }
     }
   },
   "modifiers": {
     "mode": {
-      "description": "Light and dark shadow/elevation variants",
-      "contexts": {
-        "light": [
-          { "$ref": "./commons/modes/commons.effect-light.tokens.json" }
-        ],
-        "dark": [{ "$ref": "./commons/modes/commons.effect-dark.tokens.json" }]
+      "description": {
+        "$type": "other",
+        "$value": "Light and dark shadow/elevation variants"
       },
-      "default": "light"
+      "contexts": {
+        "light": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./commons/modes/commons.effect-light.tokens.json"
+            }
+          }
+        },
+        "dark": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./commons/modes/commons.effect-dark.tokens.json"
+            }
+          }
+        }
+      },
+      "default": {
+        "$type": "other",
+        "$value": "light"
+      }
     }
   }
 }

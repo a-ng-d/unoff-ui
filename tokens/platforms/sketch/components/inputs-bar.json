@@ -2,72 +2,72 @@
   "inputsBar": {
     "gap": {
       "default": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "inner": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       }
     },
     "width": {
-      "$value": "{size.pos.xlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xlarge}"
     },
     "padding": {
       "top": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "right": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "bottom": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "left": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       }
     },
     "margin": {
       "top": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "right": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       },
       "bottom": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "left": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       }
     },
     "radius": {
-      "$value": "{border.radius.large}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.large}"
     },
     "border": {
       "color": {
-        "$value": "{sketch.color.accent.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.accent.primary}"
       },
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       }
     },
     "input": {
       "radius": {
-        "$value": "{border.radius.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{border.radius.null}"
       }
     }
   }

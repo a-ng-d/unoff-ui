@@ -1,65 +1,65 @@
 {
   "actionsItem": {
     "gap": {
-      "$value": "{size.pos.xsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xsmall}"
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xsmall}"
       },
       "right": {
-        "$value": "{size.pos.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xsmall}"
       },
       "bottom": {
-        "$value": "{size.pos.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xsmall}"
       },
       "left": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       }
     },
     "border": {
       "color": {
-        "$value": "{figma.color.border.disabled.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.border.disabled.default}"
       },
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "secondary": {
         "width": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           }
         },
         "color": {
           "default": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "focus": {
-            "$value": "{figma.color.border.selected.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.selected.default}"
           }
         }
       }
@@ -67,39 +67,39 @@
     "background": {
       "color": {
         "default": {
-          "$value": "{figma.color.bg.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.default}"
         },
         "hover": {
-          "$value": "{figma.color.bg.hover}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.hover}"
         },
         "focus": {
-          "$value": "{figma.color.bg.selected.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.selected.default}"
         }
       }
     },
     "asset": {
       "minWidth": {
-        "$value": "{size.pos.xxxlarge}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxlarge}"
       },
       "height": {
-        "$value": "{size.pos.xxxlarge}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxlarge}"
       }
     },
     "content": {
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       }
     },
     "actions": {
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       }
     }
   }

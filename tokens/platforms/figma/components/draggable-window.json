@@ -1,71 +1,71 @@
 {
   "draggableWindow": {
     "width": {
-      "$value": "296px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "296px"
     },
     "radius": {
-      "$value": "{border.radius.xxlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xxlarge}"
     },
     "shadow": {
-      "$value": "{elevation.500ModalWindow}",
-      "$type": "shadow"
+      "$type": "shadow",
+      "$value": "{elevation.500ModalWindow}"
     },
     "background": {
       "color": {
-        "$value": "{figma.color.bg.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.bg.default}"
       }
     },
     "border": {
       "color": {
-        "$value": "{grey.transparent}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{grey.transparent}"
       },
       "width": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "offset": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "header": {
       "border": {
         "width": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         },
         "color": {
-          "$value": "{figma.color.border.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.border.default}"
         }
       }
     },
     "content": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       },
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       }
     }
   }

@@ -2,30 +2,30 @@
   "sortableList": {
     "padding": {
       "top": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "right": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "bottom": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "left": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "border": {
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "color": {
-        "$value": "{figma.color.border.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.border.default}"
       }
     }
   }

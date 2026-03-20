@@ -2,12 +2,12 @@
   "segmentedControl": {
     "status": {
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "height": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       }
     },
     "item": {
@@ -15,38 +15,38 @@
         "color": {
           "default": {
             "default": {
-              "$value": "{framer.color.bg.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.secondary}"
             },
             "hover": {
-              "$value": "{framer.color.bg.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.secondary}"
             },
             "focus": {
-              "$value": "{framer.color.bg.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.secondary}"
             },
             "disabled": {
-              "$value": "{framer.color.bg.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.secondary}"
             }
           },
           "active": {
             "default": {
-              "$value": "{framer.color.bg.tertiary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.tertiary}"
             },
             "hover": {
-              "$value": "{framer.color.bg.tertiary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.tertiary}"
             },
             "focus": {
-              "$value": "{framer.color.bg.tertiary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.tertiary}"
             },
             "disabled": {
-              "$value": "{framer.color.bg.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.bg.default}"
             }
           }
         }
@@ -55,114 +55,114 @@
         "color": {
           "default": {
             "default": {
-              "$value": "{grey.transparent}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{grey.transparent}"
             },
             "hover": {
-              "$value": "{grey.transparent}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{grey.transparent}"
             },
             "focus": {
-              "$value": "{framer.color.tint.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.tint.default}"
             },
             "disabled": {
-              "$value": "{grey.transparent}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{grey.transparent}"
             }
           },
           "active": {
             "default": {
-              "$value": "{grey.transparent}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{grey.transparent}"
             },
             "hover": {
-              "$value": "{grey.transparent}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{grey.transparent}"
             },
             "focus": {
-              "$value": "{framer.color.tint.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.tint.default}"
             },
             "disabled": {
-              "$value": "{grey.transparent}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{grey.transparent}"
             }
           }
         },
         "width": {
           "default": {
             "default": {
-              "$value": "{size.null}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.null}"
             },
             "hover": {
-              "$value": "{size.null}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.null}"
             },
             "focus": {
-              "$value": "{size.pos.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.pos.unit}"
             },
             "disabled": {
-              "$value": "{size.null}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.null}"
             }
           },
           "active": {
             "default": {
-              "$value": "{size.null}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.null}"
             },
             "hover": {
-              "$value": "{size.null}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.null}"
             },
             "focus": {
-              "$value": "{size.pos.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.pos.unit}"
             },
             "disabled": {
-              "$value": "{size.null}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.null}"
             }
           }
         },
         "offset": {
           "default": {
             "default": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             },
             "hover": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             },
             "focus": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             },
             "disabled": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             }
           },
           "active": {
             "default": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             },
             "hover": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             },
             "focus": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             },
             "disabled": {
-              "$value": "{size.neg.unit}",
-              "$type": "dimension"
+              "$type": "dimension",
+              "$value": "{size.neg.unit}"
             }
           }
         }
@@ -171,122 +171,122 @@
         "color": {
           "default": {
             "default": {
-              "$value": "{framer.color.text.tertiary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.tertiary}"
             },
             "hover": {
-              "$value": "{framer.color.text.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.secondary}"
             },
             "focus": {
-              "$value": "{framer.color.text.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.secondary}"
             },
             "disabled": {
-              "$value": "{framer.color.text.tertiary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.tertiary}"
             }
           },
           "active": {
             "default": {
-              "$value": "{framer.color.text.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.default}"
             },
             "hover": {
-              "$value": "{framer.color.text.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.default}"
             },
             "focus": {
-              "$value": "{framer.color.text.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.default}"
             },
             "disabled": {
-              "$value": "{framer.color.text.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{framer.color.text.secondary}"
             }
           }
         }
       },
       "radius": {
-        "$value": "{border.radius.large}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{border.radius.large}"
       },
       "height": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "minWidth": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         }
       },
       "gap": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "border": {
       "color": {
-        "$value": "{grey.transparent}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{grey.transparent}"
       },
       "width": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "offset": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "background": {
       "color": {
-        "$value": "{framer.color.bg.secondary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.bg.secondary}"
       }
     },
     "radius": {
-      "$value": "{border.radius.xlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xlarge}"
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "left": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "bottom": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "right": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       }
     },
     "gap": {
-      "$value": "{size.null}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.null}"
     }
   }
 }

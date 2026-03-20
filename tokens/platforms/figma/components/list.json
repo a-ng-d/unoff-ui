@@ -3,60 +3,60 @@
     "background": {
       "color": {
         "default": {
-          "$value": "{figma.color.bg.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.default}"
         },
         "alternate": {
-          "$value": "{figma.color.bg.secondary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.secondary}"
         }
       }
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "right": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "bottom": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "left": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "border": {
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "color": {
-        "$value": "{figma.color.border.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.border.default}"
       }
     },
     "message": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "right": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "left": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         }
       }
     }

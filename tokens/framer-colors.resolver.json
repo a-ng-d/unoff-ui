@@ -1,20 +1,52 @@
 {
-  "name": "Framer Colors",
-  "version": "2025.10",
-  "description": "Color tokens for Framer platform, including light/dark modes",
-  "resolutionOrder": [{ "$ref": "#/modifiers/mode" }],
+  "name": {
+    "$type": "other",
+    "$value": "Framer Colors"
+  },
+  "version": {
+    "$type": "other",
+    "$value": "2025.10"
+  },
+  "description": {
+    "$type": "other",
+    "$value": "Color tokens for Framer platform, including light/dark modes"
+  },
+  "resolutionOrder": {
+    "0": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/modifiers/mode"
+      }
+    }
+  },
   "modifiers": {
     "mode": {
-      "description": "Framer light/dark modes",
-      "contexts": {
-        "framerLight": [
-          { "$ref": "./platforms/framer/modes/framer-light.tokens.json" }
-        ],
-        "framerDark": [
-          { "$ref": "./platforms/framer/modes/framer-dark.tokens.json" }
-        ]
+      "description": {
+        "$type": "other",
+        "$value": "Framer light/dark modes"
       },
-      "default": "framerLight"
+      "contexts": {
+        "framerLight": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/framer/modes/framer-light.tokens.json"
+            }
+          }
+        },
+        "framerDark": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/framer/modes/framer-dark.tokens.json"
+            }
+          }
+        }
+      },
+      "default": {
+        "$type": "other",
+        "$value": "framerLight"
+      }
     }
   }
 }

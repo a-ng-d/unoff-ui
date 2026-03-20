@@ -2,32 +2,32 @@
   "drawer": {
     "background": {
       "color": {
-        "$value": "{penpot.color.background.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{penpot.color.background.primary}"
       }
     },
     "border": {
       "width": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "style": {
-        "$value": "solid",
-        "$type": "string"
+        "$type": "string",
+        "$value": "solid"
       },
       "color": {
-        "$value": "{grey.transparent}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{grey.transparent}"
       }
     },
     "knob": {
       "size": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "position": {
-        "$value": "{size.neg.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.xxxsmall}"
       }
     }
   }

@@ -1,131 +1,131 @@
 {
   "semanticMessage": {
     "gap": {
-      "$value": "{size.pos.xxxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxxsmall}"
     },
     "padding": {
       "default": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "left": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "anchored": {
         "top": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         },
         "right": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         },
         "left": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "vertical": {
         "top": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "right": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "left": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         }
       },
       "anchoredVertical": {
         "top": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "right": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "left": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         }
       }
     },
     "radius": {
-      "$value": "{border.radius.xlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xlarge}"
     },
     "background": {
       "color": {
         "default": {
-          "$value": "{figma.color.bg.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.default}"
         },
         "info": {
           "default": {
-            "$value": "{figma.color.bg.brand.tertiary}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.brand.tertiary}"
           },
           "accent": {
-            "$value": "{shadow.color.black.alpha300}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{shadow.color.black.alpha300}"
           }
         },
         "error": {
           "default": {
-            "$value": "{figma.color.bg.danger.tertiary}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.danger.tertiary}"
           },
           "accent": {
-            "$value": "{shadow.color.black.alpha300}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{shadow.color.black.alpha300}"
           }
         },
         "success": {
           "default": {
-            "$value": "{figma.color.bg.success.tertiary}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.success.tertiary}"
           },
           "accent": {
-            "$value": "{shadow.color.black.alpha300}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{shadow.color.black.alpha300}"
           }
         },
         "warning": {
           "default": {
-            "$value": "{figma.color.bg.warning.tertiary}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.warning.tertiary}"
           },
           "accent": {
-            "$value": "{shadow.color.black.alpha300}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{shadow.color.black.alpha300}"
           }
         }
       }
@@ -133,68 +133,68 @@
     "border": {
       "color": {
         "default": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "info": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "error": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "success": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "warning": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         }
       },
       "width": {
         "default": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "info": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "error": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "success": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "warning": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "offset": {
         "default": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "info": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "error": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "success": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "warning": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       }
     }

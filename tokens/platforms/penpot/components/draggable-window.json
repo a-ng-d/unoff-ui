@@ -1,71 +1,71 @@
 {
   "draggableWindow": {
     "width": {
-      "$value": "320px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "320px"
     },
     "radius": {
-      "$value": "{border.radius.xxlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xxlarge}"
     },
     "shadow": {
-      "$value": "none",
-      "$type": "string"
+      "$type": "string",
+      "$value": "none"
     },
     "background": {
       "color": {
-        "$value": "{penpot.color.background.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{penpot.color.background.primary}"
       }
     },
     "border": {
       "color": {
-        "$value": "{penpot.color.background.quaternary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{penpot.color.background.quaternary}"
       },
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "offset": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       }
     },
     "header": {
       "border": {
         "width": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "color": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         }
       }
     },
     "content": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       },
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       }
     }
   }

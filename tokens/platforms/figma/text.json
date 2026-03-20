@@ -1,186 +1,186 @@
 {
   "text": {
     "fontFamily": {
-      "$value": "Inter",
-      "$type": "fontFamilies"
+      "$type": "fontFamilies",
+      "$value": "Inter"
     },
     "color": {
       "primary": {
-        "$value": "{figma.color.text.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.default}"
       },
       "secondary": {
-        "$value": "{figma.color.text.secondary.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.secondary.default}"
       },
       "tertiary": {
-        "$value": "{figma.color.text.tertiary.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.tertiary.default}"
       },
       "success": {
-        "$value": "{figma.color.text.success.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.success.default}"
       },
       "warning": {
-        "$value": "{figma.color.text.warning.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.warning.default}"
       },
       "alert": {
-        "$value": "{figma.color.text.danger.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.danger.default}"
       },
       "inverse": {
-        "$value": "{figma.color.text.oninverse}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.text.oninverse}"
       }
     },
     "fontWeight": {
       "medium": {
-        "$value": "{font.weight.medium}",
-        "$type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{font.weight.medium}"
       },
       "bold": {
-        "$value": "{font.weight.bold}",
-        "$type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{font.weight.bold}"
       }
     },
     "styles": {
       "default": {
         "fontFamily": {
-          "$value": "{text.fontFamily}",
-          "$type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{text.fontFamily}"
         },
         "fontSize": {
-          "$value": "{font.size.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.size.xsmall}"
         },
         "fontWeight": {
-          "$value": "{font.weight.medium}",
-          "$type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{font.weight.medium}"
         },
         "lineHeight": {
-          "$value": "{font.lineHeight.default}",
-          "$type": "number"
+          "$type": "number",
+          "$value": "{font.lineHeight.default}"
         },
         "letterSpacing": {
-          "$value": "{font.letterSpacing.pos.xlarge}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.letterSpacing.pos.xlarge}"
         }
       },
       "small": {
         "fontFamily": {
-          "$value": "{text.fontFamily}",
-          "$type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{text.fontFamily}"
         },
         "fontSize": {
-          "$value": "{font.size.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.size.small}"
         },
         "fontWeight": {
-          "$value": "{font.weight.medium}",
-          "$type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{font.weight.medium}"
         },
         "lineHeight": {
-          "$value": "{font.lineHeight.default}",
-          "$type": "number"
+          "$type": "number",
+          "$value": "{font.lineHeight.default}"
         },
         "letterSpacing": {
-          "$value": "{font.letterSpacing.pos.large}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.letterSpacing.pos.large}"
         }
       },
       "large": {
         "fontFamily": {
-          "$value": "{text.fontFamily}",
-          "$type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{text.fontFamily}"
         },
         "fontSize": {
-          "$value": "{font.size.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.size.medium}"
         },
         "fontWeight": {
-          "$value": "{font.weight.medium}",
-          "$type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{font.weight.medium}"
         },
         "lineHeight": {
-          "$value": "{font.lineHeight.large}",
-          "$type": "number"
+          "$type": "number",
+          "$value": "{font.lineHeight.large}"
         },
         "letterSpacing": {
-          "$value": "{font.letterSpacing.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.letterSpacing.pos.medium}"
         }
       },
       "xlarge": {
         "fontFamily": {
-          "$value": "{text.fontFamily}",
-          "$type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{text.fontFamily}"
         },
         "fontSize": {
-          "$value": "{font.size.large}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.size.large}"
         },
         "fontWeight": {
-          "$value": "{font.weight.medium}",
-          "$type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{font.weight.medium}"
         },
         "lineHeight": {
-          "$value": "{font.lineHeight.large}",
-          "$type": "number"
+          "$type": "number",
+          "$value": "{font.lineHeight.large}"
         },
         "letterSpacing": {
-          "$value": "{font.letterSpacing.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.letterSpacing.pos.small}"
         }
       },
       "link": {
         "color": {
-          "$value": "{figma.color.text.brand.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.text.brand.default}"
         },
         "decoration": {
-          "$value": "none",
-          "$type": "string"
+          "$type": "string",
+          "$value": "none"
         },
         "borderFocus": {
-          "$value": "none",
-          "$type": "string"
+          "$type": "string",
+          "$value": "none"
         },
         "decorationFocus": {
-          "$value": "underline",
-          "$type": "string"
+          "$type": "string",
+          "$value": "underline"
         }
       },
       "label": {
         "color": {
-          "$value": "{figma.color.text.tertiary.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.text.tertiary.default}"
         },
         "height": {
-          "$value": "{size.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.medium}"
         },
         "padding": {
           "top": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "right": {
-            "$value": "{size.pos.xxxsmall}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.xxxsmall}"
           },
           "bottom": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "left": {
-            "$value": "{size.pos.xxsmall}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.xxsmall}"
           }
         },
         "gap": {
-          "$value": "{size.pos.xxxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxxsmall}"
         }
       }
     },

@@ -1,27 +1,27 @@
 {
   "icon": {
     "width": {
-      "$value": "{size.pos.small}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.small}"
     },
     "height": {
-      "$value": "{size.pos.small}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.small}"
     },
     "picto": {
       "color": {
-        "$value": "{sketch.color.foreground.tertiary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.foreground.tertiary}"
       }
     },
     "letter": {
       "color": {
-        "$value": "{sketch.color.foreground.tertiary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.foreground.tertiary}"
       },
       "textSize": {
-        "$value": "{font.size.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{font.size.small}"
       }
     }
   }

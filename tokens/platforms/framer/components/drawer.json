@@ -2,28 +2,28 @@
   "drawer": {
     "background": {
       "color": {
-        "$value": "{framer.color.bg.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.bg.default}"
       }
     },
     "border": {
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "color": {
-        "$value": "{framer.color.divider}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.divider}"
       }
     },
     "knob": {
       "size": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "position": {
-        "$value": "{size.neg.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.xxxsmall}"
       }
     }
   }

@@ -1,83 +1,83 @@
 {
   "formItem": {
     "gap": {
-      "$value": "{size.pos.xxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxsmall}"
     },
     "minHeight": {
-      "$value": "{size.pos.medium}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.medium}"
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       },
       "right": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "bottom": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       },
       "left": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       }
     },
     "text": {
       "color": {
         "default": {
-          "$value": "{penpot.color.foreground.primary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{penpot.color.foreground.primary}"
         },
         "disabled": {
-          "$value": "{penpot.color.foreground.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{penpot.color.foreground.disabled}"
         }
       }
     },
     "label": {
       "width": {
-        "$value": "112px",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "112px"
       },
       "margin": {
         "default": {
           "top": {
-            "$value": "{size.pos.xxsmall}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.xxsmall}"
           },
           "right": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "bottom": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "left": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "multiline": {
           "top": {
-            "$value": "{size.pos.xxsmall}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.xxsmall}"
           },
           "right": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "bottom": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "left": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         }
       }
@@ -86,38 +86,38 @@
       "margin": {
         "default": {
           "top": {
-            "$value": "{size.pos.xunit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.xunit}"
           },
           "right": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "bottom": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "left": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "multiline": {
           "top": {
-            "$value": "{size.pos.xunit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.xunit}"
           },
           "right": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "bottom": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "left": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         }
       }
@@ -125,28 +125,28 @@
     "helper": {
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       }
     },
     "icon": {
       "color": {
         "disabled": {
-          "$value": "{penpot.color.foreground.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{penpot.color.foreground.disabled}"
         }
       }
     }

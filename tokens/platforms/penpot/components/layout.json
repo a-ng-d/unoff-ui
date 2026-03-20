@@ -3,87 +3,87 @@
     "block": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "bottom": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "left": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "border": {
         "width": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         },
         "style": {
-          "$value": "solid",
-          "$type": "string"
+          "$type": "string",
+          "$value": "solid"
         },
         "color": {
-          "$value": "{penpot.color.background.quaternary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{penpot.color.background.quaternary}"
         }
       }
     },
     "background": {
       "color": {
-        "$value": "{penpot.color.background.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{penpot.color.background.primary}"
       }
     },
     "list": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       }
     },
     "centered": {
       "padding": {
         "top": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         },
         "right": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         },
         "bottom": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         },
         "left": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         }
       }
     },
     "distributed": {
       "gap": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       }
     }
   }

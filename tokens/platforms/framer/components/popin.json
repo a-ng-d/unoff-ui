@@ -1,108 +1,108 @@
 {
   "popin": {
     "breakpoint": {
-      "$value": "460px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "460px"
     },
     "shadow": {
       "default": {
-        "$value": "{elevation.500ModalWindow}",
-        "$type": "shadow"
+        "$type": "shadow",
+        "$value": "{elevation.500ModalWindow}"
       },
       "panel": {
-        "$value": "{elevation.400MenuPanel}",
-        "$type": "shadow"
+        "$type": "shadow",
+        "$value": "{elevation.400MenuPanel}"
       }
     },
     "radius": {
-      "$value": "{border.radius.xxlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xxlarge}"
     },
     "width": {
       "panel": {
-        "$value": "400px",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "400px"
       }
     },
     "minWidth": {
-      "$value": "460px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "460px"
     },
     "maxWidth": {
-      "$value": "576px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "576px"
     },
     "minHeight": {
-      "$value": "136px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "136px"
     },
     "background": {
       "color": {
-        "$value": "{framer.color.bg.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.bg.default}"
       }
     },
     "text": {
       "color": {
-        "$value": "{framer.color.text.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.text.default}"
       }
     },
     "border": {
       "color": {
-        "$value": "{grey.transparent}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{grey.transparent}"
       },
       "width": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "offset": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "header": {
       "height": {
-        "$value": "{size.pos.xlarge}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xlarge}"
       },
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.msmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.msmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.msmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.msmall}"
         }
       },
       "border": {
         "width": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         },
         "color": {
-          "$value": "{framer.color.divider}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.divider}"
         }
       },
       "text": {
         "transform": {
-          "$value": "none",
-          "$type": "string"
+          "$type": "string",
+          "$value": "none"
         }
       }
     },
@@ -110,20 +110,20 @@
       "padding": {
         "empty": {
           "top": {
-            "$value": "{size.pos.small}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.small}"
           },
           "right": {
-            "$value": "{size.pos.small}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.small}"
           },
           "bottom": {
-            "$value": "{size.pos.small}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.small}"
           },
           "left": {
-            "$value": "{size.pos.small}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.small}"
           }
         }
       }
@@ -131,41 +131,41 @@
     "footer": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.pos.msmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.msmall}"
         },
         "bottom": {
-          "$value": "{size.pos.msmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.msmall}"
         },
         "left": {
-          "$value": "{size.pos.msmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.msmall}"
         }
       },
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "border": {
         "width": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "color": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         }
       }
     },
     "actions": {
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       }
     }
   }

@@ -2,97 +2,97 @@
   "accordion": {
     "padding": {
       "top": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       },
       "right": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "bottom": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       },
       "left": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       }
     },
     "border": {
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "color": {
-        "$value": "{framer.color.divider}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.divider}"
       }
     },
     "row": {
       "gap": {
-        "$value": "{size.null}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.null}"
       },
       "height": {
-        "$value": "{size.pos.xlarge}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xlarge}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         }
       }
     },
     "text": {
       "color": {
         "default": {
-          "$value": "{framer.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.default}"
         },
         "hover": {
-          "$value": "{framer.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.default}"
         },
         "expanded": {
-          "$value": "{framer.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.default}"
         },
         "disabled": {
-          "$value": "{framer.color.text.tertiary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.tertiary}"
         }
       }
     },
     "icon": {
       "color": {
         "default": {
-          "$value": "{framer.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.default}"
         },
         "hover": {
-          "$value": "{framer.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.default}"
         },
         "expanded": {
-          "$value": "{framer.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.default}"
         },
         "disabled": {
-          "$value": "{framer.color.text.tertiary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{framer.color.text.tertiary}"
         }
       }
     }

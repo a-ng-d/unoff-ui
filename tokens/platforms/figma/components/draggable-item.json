@@ -2,75 +2,75 @@
   "draggableItem": {
     "template": {
       "rows": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "columns": {
-        "$value": "repeat(76, 1fr)",
-        "$type": "string"
+        "$type": "string",
+        "$value": "repeat(76, 1fr)"
       }
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "right": {
-        "$value": "{size.pos.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xsmall}"
       },
       "bottom": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "left": {
-        "$value": "{size.pos.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xsmall}"
       }
     },
     "background": {
       "color": {
         "default": {
-          "$value": "{figma.color.bg.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.default}"
         },
         "selected": {
-          "$value": "{figma.color.bg.selected.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.selected.default}"
         },
         "pressed": {
-          "$value": "{figma.color.bg.pressed}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.bg.pressed}"
         }
       }
     },
     "gap": {
-      "$value": "{size.pos.xxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxsmall}"
     },
     "ghost": {
       "color": {
-        "$value": "{figma.color.border.selected.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{figma.color.border.selected.default}"
       },
       "height": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "inset": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       }
     },
     "param": {
       "width": {
         "compact": {
-          "$value": "112px",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "112px"
         },
         "square": {
-          "$value": "{size.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.medium}"
         }
       }
     }

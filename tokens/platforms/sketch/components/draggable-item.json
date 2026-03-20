@@ -2,75 +2,75 @@
   "draggableItem": {
     "template": {
       "rows": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "columns": {
-        "$value": "repeat(76, 1fr)",
-        "$type": "string"
+        "$type": "string",
+        "$value": "repeat(76, 1fr)"
       }
     },
     "padding": {
       "top": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "right": {
-        "$value": "{size.pos.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xsmall}"
       },
       "bottom": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "left": {
-        "$value": "{size.pos.xsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xsmall}"
       }
     },
     "background": {
       "color": {
         "default": {
-          "$value": "{sketch.color.background.primary}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.background.primary}"
         },
         "selected": {
-          "$value": "{sketch.color.accent.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.accent.disabled}"
         },
         "pressed": {
-          "$value": "{sketch.color.accent.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.accent.disabled}"
         }
       }
     },
     "gap": {
-      "$value": "{size.pos.xxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xxsmall}"
     },
     "ghost": {
       "color": {
-        "$value": "{sketch.color.accent.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.accent.primary}"
       },
       "height": {
-        "$value": "{size.pos.xunit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xunit}"
       },
       "inset": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       }
     },
     "param": {
       "width": {
         "compact": {
-          "$value": "112px",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "112px"
         },
         "square": {
-          "$value": "{size.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.medium}"
         }
       }
     }

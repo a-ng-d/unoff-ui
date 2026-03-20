@@ -1,39 +1,39 @@
 {
   "thumbnail": {
     "width": {
-      "$value": "{size.pos.medium}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.medium}"
     },
     "height": {
-      "$value": "{size.pos.medium}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.medium}"
     },
     "padding": {
-      "$value": "{size.pos.xsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xsmall}"
     },
     "radius": {
-      "$value": "{border.radius.xlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xlarge}"
     },
     "border": {
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "offset": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       },
       "color": {
-        "$value": "{framer.color.divider}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.divider}"
       }
     },
     "background": {
       "color": {
-        "$value": "{framer.color.bg.secondary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{framer.color.bg.secondary}"
       }
     }
   }

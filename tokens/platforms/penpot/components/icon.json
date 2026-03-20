@@ -1,27 +1,27 @@
 {
   "icon": {
     "width": {
-      "$value": "{size.pos.small}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.small}"
     },
     "height": {
-      "$value": "{size.pos.small}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.small}"
     },
     "picto": {
       "color": {
-        "$value": "{penpot.color.icon.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{penpot.color.icon.default}"
       }
     },
     "letter": {
       "color": {
-        "$value": "{penpot.color.icon.default}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{penpot.color.icon.default}"
       },
       "textSize": {
-        "$value": "{font.size.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{font.size.small}"
       }
     }
   }

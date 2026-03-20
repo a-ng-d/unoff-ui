@@ -1,10 +1,26 @@
 {
   "shadow": {
-    "$type": "boxShadow",
-    "$description": "A comprehensive set of shadow values to ensure consistent shadow effects across all supported platforms. These values can be used for box-shadow, text-shadow, and other shadow needs.",
-    "$extensions": {
-      "com.figma.scopes": ["EFFECT_FLOAT", "OPACITY"]
+    "$description": {
+      "$type": "other",
+      "$value": "A comprehensive set of shadow values to ensure consistent shadow effects across all supported platforms. These values can be used for box-shadow, text-shadow, and other shadow needs."
     },
+    "$extensions": {
+      "com": {
+        "figma": {
+          "scopes": {
+            "0": {
+              "$type": "other",
+              "$value": "EFFECT_FLOAT"
+            },
+            "1": {
+              "$type": "other",
+              "$value": "OPACITY"
+            }
+          }
+        }
+      }
+    },
+    "$type": "boxShadow",
     "hud": {
       "$value": [
         {
@@ -37,11 +53,27 @@
     }
   },
   "elevation": {
-    "$type": "boxShadow",
-    "$description": "A comprehensive set of shadow values to ensure consistent shadow effects across all supported platforms. These values can be used for box-shadow, text-shadow, and other shadow needs.",
-    "$extensions": {
-      "com.figma.scopes": ["EFFECT_FLOAT", "OPACITY"]
+    "$description": {
+      "$type": "other",
+      "$value": "A comprehensive set of shadow values to ensure consistent shadow effects across all supported platforms. These values can be used for box-shadow, text-shadow, and other shadow needs."
     },
+    "$extensions": {
+      "com": {
+        "figma": {
+          "scopes": {
+            "0": {
+              "$type": "other",
+              "$value": "EFFECT_FLOAT"
+            },
+            "1": {
+              "$type": "other",
+              "$value": "OPACITY"
+            }
+          }
+        }
+      }
+    },
+    "$type": "boxShadow",
     "100Shapes": {
       "$value": [
         {
@@ -224,6 +256,13 @@
     }
   },
   "$extensions": {
-    "com.figma.modeName": "Dark"
+    "com": {
+      "figma": {
+        "modeName": {
+          "$type": "other",
+          "$value": "Dark"
+        }
+      }
+    }
   }
 }

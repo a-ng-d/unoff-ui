@@ -1,61 +1,61 @@
 {
   "membersList": {
     "gap": {
-      "$value": "{size.neg.xxxsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.neg.xxxsmall}"
     },
     "avatar": {
       "radius": {
-        "$value": "{border.radius.xxlarge}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{border.radius.xxlarge}"
       },
       "width": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "height": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "border": {
         "width": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "offset": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "color": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         }
       }
     },
     "more": {
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       }
     },
     "text": {
       "color": {
-        "$value": "{sketch.color.foreground.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.foreground.primary}"
       }
     }
   }

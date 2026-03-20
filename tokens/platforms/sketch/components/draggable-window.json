@@ -1,71 +1,71 @@
 {
   "draggableWindow": {
     "width": {
-      "$value": "320px",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "320px"
     },
     "radius": {
-      "$value": "{border.radius.xxxlarge}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.xxxlarge}"
     },
     "shadow": {
-      "$value": "{elevation.500ModalWindow}",
-      "$type": "shadow"
+      "$type": "shadow",
+      "$value": "{elevation.500ModalWindow}"
     },
     "background": {
       "color": {
-        "$value": "{sketch.color.background.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.background.primary}"
       }
     },
     "border": {
       "color": {
-        "$value": "{sketch.color.border.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.border.primary}"
       },
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "offset": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       }
     },
     "header": {
       "border": {
         "width": {
-          "$value": "{size.pos.unit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.unit}"
         },
         "color": {
-          "$value": "{sketch.color.border.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{sketch.color.border.disabled}"
         }
       }
     },
     "content": {
       "padding": {
         "top": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       },
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       }
     }
   }

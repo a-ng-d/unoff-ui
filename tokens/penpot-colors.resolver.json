@@ -1,20 +1,52 @@
 {
-  "name": "Penpot Colors",
-  "version": "2025.10",
-  "description": "Color tokens for Penpot platform, including light/dark modes",
-  "resolutionOrder": [{ "$ref": "#/modifiers/mode" }],
+  "name": {
+    "$type": "other",
+    "$value": "Penpot Colors"
+  },
+  "version": {
+    "$type": "other",
+    "$value": "2025.10"
+  },
+  "description": {
+    "$type": "other",
+    "$value": "Color tokens for Penpot platform, including light/dark modes"
+  },
+  "resolutionOrder": {
+    "0": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/modifiers/mode"
+      }
+    }
+  },
   "modifiers": {
     "mode": {
-      "description": "Penpot light/dark modes",
-      "contexts": {
-        "penpotLight": [
-          { "$ref": "./platforms/penpot/modes/penpot-light.tokens.json" }
-        ],
-        "penpotDark": [
-          { "$ref": "./platforms/penpot/modes/penpot-dark.tokens.json" }
-        ]
+      "description": {
+        "$type": "other",
+        "$value": "Penpot light/dark modes"
       },
-      "default": "penpotLight"
+      "contexts": {
+        "penpotLight": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/penpot/modes/penpot-light.tokens.json"
+            }
+          }
+        },
+        "penpotDark": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/penpot/modes/penpot-dark.tokens.json"
+            }
+          }
+        }
+      },
+      "default": {
+        "$type": "other",
+        "$value": "penpotLight"
+      }
     }
   }
 }

@@ -1,21 +1,60 @@
 {
-  "name": "Figma Colors",
-  "version": "2025.10",
-  "description": "Color tokens for Figma platform, including light/dark/figjam modes",
-  "resolutionOrder": [{ "$ref": "#/modifiers/mode" }],
+  "name": {
+    "$type": "other",
+    "$value": "Figma Colors"
+  },
+  "version": {
+    "$type": "other",
+    "$value": "2025.10"
+  },
+  "description": {
+    "$type": "other",
+    "$value": "Color tokens for Figma platform, including light/dark/figjam modes"
+  },
+  "resolutionOrder": {
+    "0": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/modifiers/mode"
+      }
+    }
+  },
   "modifiers": {
     "mode": {
-      "description": "Figma light/dark/figjam modes",
-      "contexts": {
-        "figmaLight": [
-          { "$ref": "./platforms/figma/modes/figma-light.tokens.json" }
-        ],
-        "figmaDark": [
-          { "$ref": "./platforms/figma/modes/figma-dark.tokens.json" }
-        ],
-        "figjam": [{ "$ref": "./platforms/figma/modes/figjam.tokens.json" }]
+      "description": {
+        "$type": "other",
+        "$value": "Figma light/dark/figjam modes"
       },
-      "default": "figmaLight"
+      "contexts": {
+        "figmaLight": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/figma/modes/figma-light.tokens.json"
+            }
+          }
+        },
+        "figmaDark": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/figma/modes/figma-dark.tokens.json"
+            }
+          }
+        },
+        "figjam": {
+          "0": {
+            "$ref": {
+              "$type": "other",
+              "$value": "./platforms/figma/modes/figjam.tokens.json"
+            }
+          }
+        }
+      },
+      "default": {
+        "$type": "other",
+        "$value": "figmaLight"
+      }
     }
   }
 }

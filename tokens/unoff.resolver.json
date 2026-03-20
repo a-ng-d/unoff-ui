@@ -1,314 +1,1450 @@
 {
-  "name": "Unoff",
-  "version": "2025.10",
-  "description": "Design tokens for Unoff UI library supporting Figma, Penpot, Sketch, and Framer",
-  "resolutionOrder": [
-    { "$ref": "#/sets/globals" },
-    { "$ref": "#/modifiers/theme" },
-    { "$ref": "#/modifiers/mode" }
-  ],
+  "name": {
+    "$type": "other",
+    "$value": "Unoff"
+  },
+  "version": {
+    "$type": "other",
+    "$value": "2025.10"
+  },
+  "description": {
+    "$type": "other",
+    "$value": "Design tokens for Unoff UI library supporting Figma, Penpot, Sketch, and Framer"
+  },
+  "resolutionOrder": {
+    "0": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/sets/globals"
+      }
+    },
+    "1": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/modifiers/theme"
+      }
+    },
+    "2": {
+      "$ref": {
+        "$type": "other",
+        "$value": "#/modifiers/mode"
+      }
+    }
+  },
   "sets": {
     "globals": {
-      "description": "Global design tokens shared across all platforms",
-      "sources": [
-        { "$ref": "./globals/globals.tokens.json" },
-        { "$ref": "./globals/globals.effect.tokens.json" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Global design tokens shared across all platforms"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./globals/globals.tokens.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./globals/globals.effect.tokens.json"
+          }
+        }
+      }
     },
     "platforms": {
-      "description": "Platform-specific design tokens",
-      "sources": [
-        { "$ref": "#/sets/platforms/figma" },
-        { "$ref": "#/sets/platforms/penpot" },
-        { "$ref": "#/sets/platforms/sketch" },
-        { "$ref": "#/sets/platforms/framer" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Platform-specific design tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/figma"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/penpot"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/sketch"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/framer"
+          }
+        }
+      }
     },
     "platforms/figma": {
-      "description": "Figma platform tokens",
-      "sources": [
-        { "$ref": "./platforms/figma/icon.json" },
-        { "$ref": "./platforms/figma/text.json" },
-        { "$ref": "./platforms/figma/typography.json" },
-        { "$ref": "#/sets/platforms/figma/components" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Figma platform tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/icon.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/text.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/typography.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/figma/components"
+          }
+        }
+      }
     },
     "platforms/figma/components": {
-      "description": "Figma component tokens",
-      "sources": [
-        { "$ref": "./platforms/figma/components/accordion.json" },
-        { "$ref": "./platforms/figma/components/actions-item.json" },
-        { "$ref": "./platforms/figma/components/actions-list.json" },
-        { "$ref": "./platforms/figma/components/avatar.json" },
-        { "$ref": "./platforms/figma/components/bar.json" },
-        { "$ref": "./platforms/figma/components/button.json" },
-        { "$ref": "./platforms/figma/components/card.json" },
-        { "$ref": "./platforms/figma/components/chip.json" },
-        { "$ref": "./platforms/figma/components/color-chip.json" },
-        { "$ref": "./platforms/figma/components/color-item.json" },
-        { "$ref": "./platforms/figma/components/consent.json" },
-        { "$ref": "./platforms/figma/components/dialog.json" },
-        { "$ref": "./platforms/figma/components/draggable-item.json" },
-        { "$ref": "./platforms/figma/components/draggable-window.json" },
-        { "$ref": "./platforms/figma/components/drawer.json" },
-        { "$ref": "./platforms/figma/components/dropdown.json" },
-        { "$ref": "./platforms/figma/components/dropzone.json" },
-        { "$ref": "./platforms/figma/components/form-item.json" },
-        { "$ref": "./platforms/figma/components/icon-chip.json" },
-        { "$ref": "./platforms/figma/components/icon.json" },
-        { "$ref": "./platforms/figma/components/input.json" },
-        { "$ref": "./platforms/figma/components/inputs-bar.json" },
-        { "$ref": "./platforms/figma/components/keyboard-shortcut-item.json" },
-        { "$ref": "./platforms/figma/components/knob.json" },
-        { "$ref": "./platforms/figma/components/layout.json" },
-        { "$ref": "./platforms/figma/components/list.json" },
-        { "$ref": "./platforms/figma/components/members-list.json" },
-        { "$ref": "./platforms/figma/components/menu.json" },
-        { "$ref": "./platforms/figma/components/message.json" },
-        { "$ref": "./platforms/figma/components/multiple-slider.json" },
-        { "$ref": "./platforms/figma/components/notification.json" },
-        { "$ref": "./platforms/figma/components/popin.json" },
-        { "$ref": "./platforms/figma/components/section-title.json" },
-        { "$ref": "./platforms/figma/components/section.json" },
-        { "$ref": "./platforms/figma/components/select.json" },
-        { "$ref": "./platforms/figma/components/semantic-message.json" },
-        { "$ref": "./platforms/figma/components/simple-item.json" },
-        { "$ref": "./platforms/figma/components/simple-slider.json" },
-        { "$ref": "./platforms/figma/components/sortable-list.json" },
-        { "$ref": "./platforms/figma/components/tabs.json" },
-        { "$ref": "./platforms/figma/components/thumbnail.json" },
-        { "$ref": "./platforms/figma/components/tooltip.json" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Figma component tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/accordion.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/actions-item.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/actions-list.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/avatar.json"
+          }
+        },
+        "4": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/bar.json"
+          }
+        },
+        "5": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/button.json"
+          }
+        },
+        "6": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/card.json"
+          }
+        },
+        "7": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/chip.json"
+          }
+        },
+        "8": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/color-chip.json"
+          }
+        },
+        "9": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/color-item.json"
+          }
+        },
+        "10": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/consent.json"
+          }
+        },
+        "11": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/dialog.json"
+          }
+        },
+        "12": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/draggable-item.json"
+          }
+        },
+        "13": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/draggable-window.json"
+          }
+        },
+        "14": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/drawer.json"
+          }
+        },
+        "15": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/dropdown.json"
+          }
+        },
+        "16": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/dropzone.json"
+          }
+        },
+        "17": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/form-item.json"
+          }
+        },
+        "18": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/icon-chip.json"
+          }
+        },
+        "19": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/icon.json"
+          }
+        },
+        "20": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/input.json"
+          }
+        },
+        "21": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/inputs-bar.json"
+          }
+        },
+        "22": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/keyboard-shortcut-item.json"
+          }
+        },
+        "23": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/knob.json"
+          }
+        },
+        "24": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/layout.json"
+          }
+        },
+        "25": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/list.json"
+          }
+        },
+        "26": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/members-list.json"
+          }
+        },
+        "27": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/menu.json"
+          }
+        },
+        "28": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/message.json"
+          }
+        },
+        "29": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/multiple-slider.json"
+          }
+        },
+        "30": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/notification.json"
+          }
+        },
+        "31": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/popin.json"
+          }
+        },
+        "32": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/section-title.json"
+          }
+        },
+        "33": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/section.json"
+          }
+        },
+        "34": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/select.json"
+          }
+        },
+        "35": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/semantic-message.json"
+          }
+        },
+        "36": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/simple-item.json"
+          }
+        },
+        "37": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/simple-slider.json"
+          }
+        },
+        "38": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/sortable-list.json"
+          }
+        },
+        "39": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/tabs.json"
+          }
+        },
+        "40": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/thumbnail.json"
+          }
+        },
+        "41": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/figma/components/tooltip.json"
+          }
+        }
+      }
     },
     "platforms/penpot": {
-      "description": "Penpot platform tokens",
-      "sources": [
-        { "$ref": "./platforms/penpot/icon.json" },
-        { "$ref": "./platforms/penpot/text.json" },
-        { "$ref": "./platforms/penpot/typography.json" },
-        { "$ref": "#/sets/platforms/penpot/components" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Penpot platform tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/icon.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/text.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/typography.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/penpot/components"
+          }
+        }
+      }
     },
     "platforms/penpot/components": {
-      "description": "Penpot component tokens",
-      "sources": [
-        { "$ref": "./platforms/penpot/components/accordion.json" },
-        { "$ref": "./platforms/penpot/components/actions-item.json" },
-        { "$ref": "./platforms/penpot/components/actions-list.json" },
-        { "$ref": "./platforms/penpot/components/avatar.json" },
-        { "$ref": "./platforms/penpot/components/bar.json" },
-        { "$ref": "./platforms/penpot/components/button.json" },
-        { "$ref": "./platforms/penpot/components/card.json" },
-        { "$ref": "./platforms/penpot/components/chip.json" },
-        { "$ref": "./platforms/penpot/components/color-chip.json" },
-        { "$ref": "./platforms/penpot/components/color-item.json" },
-        { "$ref": "./platforms/penpot/components/consent.json" },
-        { "$ref": "./platforms/penpot/components/dialog.json" },
-        { "$ref": "./platforms/penpot/components/draggable-item.json" },
-        { "$ref": "./platforms/penpot/components/draggable-window.json" },
-        { "$ref": "./platforms/penpot/components/drawer.json" },
-        { "$ref": "./platforms/penpot/components/dropdown.json" },
-        { "$ref": "./platforms/penpot/components/dropzone.json" },
-        { "$ref": "./platforms/penpot/components/form-item.json" },
-        { "$ref": "./platforms/penpot/components/icon-chip.json" },
-        { "$ref": "./platforms/penpot/components/icon.json" },
-        { "$ref": "./platforms/penpot/components/input.json" },
-        { "$ref": "./platforms/penpot/components/inputs-bar.json" },
-        { "$ref": "./platforms/penpot/components/keyboard-shortcut-item.json" },
-        { "$ref": "./platforms/penpot/components/knob.json" },
-        { "$ref": "./platforms/penpot/components/layout.json" },
-        { "$ref": "./platforms/penpot/components/list.json" },
-        { "$ref": "./platforms/penpot/components/members-list.json" },
-        { "$ref": "./platforms/penpot/components/menu.json" },
-        { "$ref": "./platforms/penpot/components/message.json" },
-        { "$ref": "./platforms/penpot/components/multiple-slider.json" },
-        { "$ref": "./platforms/penpot/components/notification.json" },
-        { "$ref": "./platforms/penpot/components/popin.json" },
-        { "$ref": "./platforms/penpot/components/section-title.json" },
-        { "$ref": "./platforms/penpot/components/section.json" },
-        { "$ref": "./platforms/penpot/components/select.json" },
-        { "$ref": "./platforms/penpot/components/semantic-message.json" },
-        { "$ref": "./platforms/penpot/components/simple-item.json" },
-        { "$ref": "./platforms/penpot/components/simple-slider.json" },
-        { "$ref": "./platforms/penpot/components/sortable-list.json" },
-        { "$ref": "./platforms/penpot/components/tabs.json" },
-        { "$ref": "./platforms/penpot/components/thumbnail.json" },
-        { "$ref": "./platforms/penpot/components/tooltip.json" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Penpot component tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/accordion.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/actions-item.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/actions-list.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/avatar.json"
+          }
+        },
+        "4": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/bar.json"
+          }
+        },
+        "5": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/button.json"
+          }
+        },
+        "6": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/card.json"
+          }
+        },
+        "7": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/chip.json"
+          }
+        },
+        "8": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/color-chip.json"
+          }
+        },
+        "9": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/color-item.json"
+          }
+        },
+        "10": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/consent.json"
+          }
+        },
+        "11": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/dialog.json"
+          }
+        },
+        "12": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/draggable-item.json"
+          }
+        },
+        "13": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/draggable-window.json"
+          }
+        },
+        "14": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/drawer.json"
+          }
+        },
+        "15": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/dropdown.json"
+          }
+        },
+        "16": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/dropzone.json"
+          }
+        },
+        "17": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/form-item.json"
+          }
+        },
+        "18": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/icon-chip.json"
+          }
+        },
+        "19": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/icon.json"
+          }
+        },
+        "20": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/input.json"
+          }
+        },
+        "21": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/inputs-bar.json"
+          }
+        },
+        "22": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/keyboard-shortcut-item.json"
+          }
+        },
+        "23": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/knob.json"
+          }
+        },
+        "24": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/layout.json"
+          }
+        },
+        "25": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/list.json"
+          }
+        },
+        "26": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/members-list.json"
+          }
+        },
+        "27": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/menu.json"
+          }
+        },
+        "28": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/message.json"
+          }
+        },
+        "29": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/multiple-slider.json"
+          }
+        },
+        "30": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/notification.json"
+          }
+        },
+        "31": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/popin.json"
+          }
+        },
+        "32": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/section-title.json"
+          }
+        },
+        "33": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/section.json"
+          }
+        },
+        "34": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/select.json"
+          }
+        },
+        "35": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/semantic-message.json"
+          }
+        },
+        "36": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/simple-item.json"
+          }
+        },
+        "37": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/simple-slider.json"
+          }
+        },
+        "38": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/sortable-list.json"
+          }
+        },
+        "39": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/tabs.json"
+          }
+        },
+        "40": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/thumbnail.json"
+          }
+        },
+        "41": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/penpot/components/tooltip.json"
+          }
+        }
+      }
     },
     "platforms/sketch": {
-      "description": "Sketch platform tokens",
-      "sources": [
-        { "$ref": "./platforms/sketch/icon.json" },
-        { "$ref": "./platforms/sketch/text.json" },
-        { "$ref": "./platforms/sketch/typography.json" },
-        { "$ref": "#/sets/platforms/sketch/components" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Sketch platform tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/icon.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/text.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/typography.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/sketch/components"
+          }
+        }
+      }
     },
     "platforms/sketch/components": {
-      "description": "Sketch component tokens",
-      "sources": [
-        { "$ref": "./platforms/sketch/components/accordion.json" },
-        { "$ref": "./platforms/sketch/components/actions-item.json" },
-        { "$ref": "./platforms/sketch/components/actions-list.json" },
-        { "$ref": "./platforms/sketch/components/avatar.json" },
-        { "$ref": "./platforms/sketch/components/bar.json" },
-        { "$ref": "./platforms/sketch/components/button.json" },
-        { "$ref": "./platforms/sketch/components/card.json" },
-        { "$ref": "./platforms/sketch/components/chip.json" },
-        { "$ref": "./platforms/sketch/components/color-chip.json" },
-        { "$ref": "./platforms/sketch/components/color-item.json" },
-        { "$ref": "./platforms/sketch/components/consent.json" },
-        { "$ref": "./platforms/sketch/components/dialog.json" },
-        { "$ref": "./platforms/sketch/components/draggable-item.json" },
-        { "$ref": "./platforms/sketch/components/draggable-window.json" },
-        { "$ref": "./platforms/sketch/components/drawer.json" },
-        { "$ref": "./platforms/sketch/components/dropdown.json" },
-        { "$ref": "./platforms/sketch/components/dropzone.json" },
-        { "$ref": "./platforms/sketch/components/form-item.json" },
-        { "$ref": "./platforms/sketch/components/icon-chip.json" },
-        { "$ref": "./platforms/sketch/components/icon.json" },
-        { "$ref": "./platforms/sketch/components/input.json" },
-        { "$ref": "./platforms/sketch/components/inputs-bar.json" },
-        { "$ref": "./platforms/sketch/components/keyboard-shortcut-item.json" },
-        { "$ref": "./platforms/sketch/components/knob.json" },
-        { "$ref": "./platforms/sketch/components/layout.json" },
-        { "$ref": "./platforms/sketch/components/list.json" },
-        { "$ref": "./platforms/sketch/components/members-list.json" },
-        { "$ref": "./platforms/sketch/components/menu.json" },
-        { "$ref": "./platforms/sketch/components/message.json" },
-        { "$ref": "./platforms/sketch/components/multiple-slider.json" },
-        { "$ref": "./platforms/sketch/components/notification.json" },
-        { "$ref": "./platforms/sketch/components/popin.json" },
-        { "$ref": "./platforms/sketch/components/section-title.json" },
-        { "$ref": "./platforms/sketch/components/section.json" },
-        { "$ref": "./platforms/sketch/components/select.json" },
-        { "$ref": "./platforms/sketch/components/semantic-message.json" },
-        { "$ref": "./platforms/sketch/components/simple-item.json" },
-        { "$ref": "./platforms/sketch/components/simple-slider.json" },
-        { "$ref": "./platforms/sketch/components/sortable-list.json" },
-        { "$ref": "./platforms/sketch/components/tabs.json" },
-        { "$ref": "./platforms/sketch/components/thumbnail.json" },
-        { "$ref": "./platforms/sketch/components/tooltip.json" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Sketch component tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/accordion.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/actions-item.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/actions-list.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/avatar.json"
+          }
+        },
+        "4": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/bar.json"
+          }
+        },
+        "5": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/button.json"
+          }
+        },
+        "6": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/card.json"
+          }
+        },
+        "7": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/chip.json"
+          }
+        },
+        "8": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/color-chip.json"
+          }
+        },
+        "9": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/color-item.json"
+          }
+        },
+        "10": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/consent.json"
+          }
+        },
+        "11": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/dialog.json"
+          }
+        },
+        "12": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/draggable-item.json"
+          }
+        },
+        "13": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/draggable-window.json"
+          }
+        },
+        "14": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/drawer.json"
+          }
+        },
+        "15": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/dropdown.json"
+          }
+        },
+        "16": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/dropzone.json"
+          }
+        },
+        "17": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/form-item.json"
+          }
+        },
+        "18": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/icon-chip.json"
+          }
+        },
+        "19": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/icon.json"
+          }
+        },
+        "20": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/input.json"
+          }
+        },
+        "21": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/inputs-bar.json"
+          }
+        },
+        "22": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/keyboard-shortcut-item.json"
+          }
+        },
+        "23": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/knob.json"
+          }
+        },
+        "24": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/layout.json"
+          }
+        },
+        "25": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/list.json"
+          }
+        },
+        "26": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/members-list.json"
+          }
+        },
+        "27": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/menu.json"
+          }
+        },
+        "28": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/message.json"
+          }
+        },
+        "29": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/multiple-slider.json"
+          }
+        },
+        "30": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/notification.json"
+          }
+        },
+        "31": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/popin.json"
+          }
+        },
+        "32": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/section-title.json"
+          }
+        },
+        "33": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/section.json"
+          }
+        },
+        "34": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/select.json"
+          }
+        },
+        "35": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/semantic-message.json"
+          }
+        },
+        "36": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/simple-item.json"
+          }
+        },
+        "37": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/simple-slider.json"
+          }
+        },
+        "38": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/sortable-list.json"
+          }
+        },
+        "39": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/tabs.json"
+          }
+        },
+        "40": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/thumbnail.json"
+          }
+        },
+        "41": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/sketch/components/tooltip.json"
+          }
+        }
+      }
     },
     "platforms/framer": {
-      "description": "Framer platform tokens",
-      "sources": [
-        { "$ref": "./platforms/framer/icon.json" },
-        { "$ref": "./platforms/framer/text.json" },
-        { "$ref": "./platforms/framer/typography.json" },
-        { "$ref": "#/sets/platforms/framer/components" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Framer platform tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/icon.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/text.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/typography.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "#/sets/platforms/framer/components"
+          }
+        }
+      }
     },
     "platforms/framer/components": {
-      "description": "Framer component tokens",
-      "sources": [
-        { "$ref": "./platforms/framer/components/accordion.json" },
-        { "$ref": "./platforms/framer/components/actions-item.json" },
-        { "$ref": "./platforms/framer/components/actions-list.json" },
-        { "$ref": "./platforms/framer/components/avatar.json" },
-        { "$ref": "./platforms/framer/components/bar.json" },
-        { "$ref": "./platforms/framer/components/button.json" },
-        { "$ref": "./platforms/framer/components/card.json" },
-        { "$ref": "./platforms/framer/components/chip.json" },
-        { "$ref": "./platforms/framer/components/color-chip.json" },
-        { "$ref": "./platforms/framer/components/color-item.json" },
-        { "$ref": "./platforms/framer/components/consent.json" },
-        { "$ref": "./platforms/framer/components/dialog.json" },
-        { "$ref": "./platforms/framer/components/draggable-item.json" },
-        { "$ref": "./platforms/framer/components/draggable-window.json" },
-        { "$ref": "./platforms/framer/components/drawer.json" },
-        { "$ref": "./platforms/framer/components/dropdown.json" },
-        { "$ref": "./platforms/framer/components/dropzone.json" },
-        { "$ref": "./platforms/framer/components/form-item.json" },
-        { "$ref": "./platforms/framer/components/icon-chip.json" },
-        { "$ref": "./platforms/framer/components/icon.json" },
-        { "$ref": "./platforms/framer/components/input.json" },
-        { "$ref": "./platforms/framer/components/inputs-bar.json" },
-        { "$ref": "./platforms/framer/components/keyboard-shortcut-item.json" },
-        { "$ref": "./platforms/framer/components/knob.json" },
-        { "$ref": "./platforms/framer/components/layout.json" },
-        { "$ref": "./platforms/framer/components/list.json" },
-        { "$ref": "./platforms/framer/components/members-list.json" },
-        { "$ref": "./platforms/framer/components/menu.json" },
-        { "$ref": "./platforms/framer/components/message.json" },
-        { "$ref": "./platforms/framer/components/multiple-slider.json" },
-        { "$ref": "./platforms/framer/components/notification.json" },
-        { "$ref": "./platforms/framer/components/popin.json" },
-        { "$ref": "./platforms/framer/components/section-title.json" },
-        { "$ref": "./platforms/framer/components/section.json" },
-        { "$ref": "./platforms/framer/components/select.json" },
-        { "$ref": "./platforms/framer/components/semantic-message.json" },
-        { "$ref": "./platforms/framer/components/simple-item.json" },
-        { "$ref": "./platforms/framer/components/simple-slider.json" },
-        { "$ref": "./platforms/framer/components/sortable-list.json" },
-        { "$ref": "./platforms/framer/components/tabs.json" },
-        { "$ref": "./platforms/framer/components/thumbnail.json" },
-        { "$ref": "./platforms/framer/components/tooltip.json" }
-      ]
+      "description": {
+        "$type": "other",
+        "$value": "Framer component tokens"
+      },
+      "sources": {
+        "0": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/accordion.json"
+          }
+        },
+        "1": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/actions-item.json"
+          }
+        },
+        "2": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/actions-list.json"
+          }
+        },
+        "3": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/avatar.json"
+          }
+        },
+        "4": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/bar.json"
+          }
+        },
+        "5": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/button.json"
+          }
+        },
+        "6": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/card.json"
+          }
+        },
+        "7": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/chip.json"
+          }
+        },
+        "8": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/color-chip.json"
+          }
+        },
+        "9": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/color-item.json"
+          }
+        },
+        "10": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/consent.json"
+          }
+        },
+        "11": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/dialog.json"
+          }
+        },
+        "12": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/draggable-item.json"
+          }
+        },
+        "13": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/draggable-window.json"
+          }
+        },
+        "14": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/drawer.json"
+          }
+        },
+        "15": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/dropdown.json"
+          }
+        },
+        "16": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/dropzone.json"
+          }
+        },
+        "17": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/form-item.json"
+          }
+        },
+        "18": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/icon-chip.json"
+          }
+        },
+        "19": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/icon.json"
+          }
+        },
+        "20": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/input.json"
+          }
+        },
+        "21": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/inputs-bar.json"
+          }
+        },
+        "22": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/keyboard-shortcut-item.json"
+          }
+        },
+        "23": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/knob.json"
+          }
+        },
+        "24": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/layout.json"
+          }
+        },
+        "25": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/list.json"
+          }
+        },
+        "26": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/members-list.json"
+          }
+        },
+        "27": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/menu.json"
+          }
+        },
+        "28": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/message.json"
+          }
+        },
+        "29": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/multiple-slider.json"
+          }
+        },
+        "30": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/notification.json"
+          }
+        },
+        "31": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/popin.json"
+          }
+        },
+        "32": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/section-title.json"
+          }
+        },
+        "33": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/section.json"
+          }
+        },
+        "34": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/select.json"
+          }
+        },
+        "35": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/semantic-message.json"
+          }
+        },
+        "36": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/simple-item.json"
+          }
+        },
+        "37": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/simple-slider.json"
+          }
+        },
+        "38": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/sortable-list.json"
+          }
+        },
+        "39": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/tabs.json"
+          }
+        },
+        "40": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/thumbnail.json"
+          }
+        },
+        "41": {
+          "$ref": {
+            "$type": "other",
+            "$value": "./platforms/framer/components/tooltip.json"
+          }
+        }
+      }
     }
   },
   "modifiers": {
     "theme": {
-      "description": "Platform themes (Figma, Penpot, Sketch, Framer)",
+      "description": {
+        "$type": "other",
+        "$value": "Platform themes (Figma, Penpot, Sketch, Framer)"
+      },
       "contexts": {
         "figma": {
-          "description": "Figma",
-          "sources": [{ "$ref": "#/sets/platforms/figma" }]
+          "description": {
+            "$type": "other",
+            "$value": "Figma"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "#/sets/platforms/figma"
+              }
+            }
+          }
         },
         "penpot": {
-          "description": "Penpot",
-          "sources": [{ "$ref": "#/sets/platforms/penpot" }]
+          "description": {
+            "$type": "other",
+            "$value": "Penpot"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "#/sets/platforms/penpot"
+              }
+            }
+          }
         },
         "sketch": {
-          "description": "Sketch",
-          "sources": [{ "$ref": "#/sets/platforms/sketch" }]
+          "description": {
+            "$type": "other",
+            "$value": "Sketch"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "#/sets/platforms/sketch"
+              }
+            }
+          }
         },
         "framer": {
-          "description": "Framer",
-          "sources": [{ "$ref": "#/sets/platforms/framer" }]
+          "description": {
+            "$type": "other",
+            "$value": "Framer"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "#/sets/platforms/framer"
+              }
+            }
+          }
         }
       },
-      "default": "figma"
+      "default": {
+        "$type": "other",
+        "$value": "figma"
+      }
     },
     "mode": {
-      "description": "Color modes per platform",
+      "description": {
+        "$type": "other",
+        "$value": "Color modes per platform"
+      },
       "contexts": {
         "figma-light": {
-          "description": "Figma light mode",
-          "sources": [{ "$ref": "./platforms/figma/modes/figma-light.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Figma light mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/figma/modes/figma-light.json"
+              }
+            }
+          }
         },
         "figma-dark": {
-          "description": "Figma dark mode",
-          "sources": [{ "$ref": "./platforms/figma/modes/figma-dark.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Figma dark mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/figma/modes/figma-dark.json"
+              }
+            }
+          }
         },
         "penpot-light": {
-          "description": "Penpot light mode",
-          "sources": [{ "$ref": "./platforms/penpot/modes/penpot-light.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Penpot light mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/penpot/modes/penpot-light.json"
+              }
+            }
+          }
         },
         "penpot-dark": {
-          "description": "Penpot dark mode",
-          "sources": [{ "$ref": "./platforms/penpot/modes/penpot-dark.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Penpot dark mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/penpot/modes/penpot-dark.json"
+              }
+            }
+          }
         },
         "sketch-light": {
-          "description": "Sketch light mode",
-          "sources": [{ "$ref": "./platforms/sketch/modes/light.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Sketch light mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/sketch/modes/light.json"
+              }
+            }
+          }
         },
         "sketch-dark": {
-          "description": "Sketch dark mode",
-          "sources": [{ "$ref": "./platforms/sketch/modes/dark.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Sketch dark mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/sketch/modes/dark.json"
+              }
+            }
+          }
         },
         "framer-light": {
-          "description": "Framer light mode",
-          "sources": [{ "$ref": "./platforms/framer/modes/framer-light.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Framer light mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/framer/modes/framer-light.json"
+              }
+            }
+          }
         },
         "framer-dark": {
-          "description": "Framer dark mode",
-          "sources": [{ "$ref": "./platforms/framer/modes/framer-dark.json" }]
+          "description": {
+            "$type": "other",
+            "$value": "Framer dark mode"
+          },
+          "sources": {
+            "0": {
+              "$ref": {
+                "$type": "other",
+                "$value": "./platforms/framer/modes/framer-dark.json"
+              }
+            }
+          }
         }
       },
-      "default": "figma-light"
+      "default": {
+        "$type": "other",
+        "$value": "figma-light"
+      }
     }
   }
 }

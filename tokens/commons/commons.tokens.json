@@ -1,16 +1,15 @@
 {
   "$extensions": {
-    "com.figma.modeName": "Default"
+    "com": {
+      "figma": {
+        "modeName": {
+          "$type": "other",
+          "$value": "Default"
+        }
+      }
+    }
   },
   "grey": {
-    "$type": "color",
-    "$description": "A comprehensive set of grey color values to ensure consistent color usage across all supported platforms. These values can be used for backgrounds, borders, text, that must be preserved whatever the enabled color mode.",
-    "$extensions": {
-      "com.figma.scopes": ["ALL_SCOPES"]
-    },
-    "transparent": {
-      "$value": "#00000000"
-    },
     "0": {
       "$value": "#FFFFFF"
     },
@@ -43,14 +42,29 @@
     },
     "1000": {
       "$value": "#222222"
+    },
+    "$type": "color",
+    "$description": {
+      "$type": "other",
+      "$value": "A comprehensive set of grey color values to ensure consistent color usage across all supported platforms. These values can be used for backgrounds, borders, text, that must be preserved whatever the enabled color mode."
+    },
+    "$extensions": {
+      "com": {
+        "figma": {
+          "scopes": {
+            "0": {
+              "$type": "other",
+              "$value": "ALL_SCOPES"
+            }
+          }
+        }
+      }
+    },
+    "transparent": {
+      "$value": "#00000000"
     }
   },
   "alpha": {
-    "$type": "number",
-    "$description": "A comprehensive set of opacity values to ensure consistent transparency levels across all supported platforms. These values can be used for fills, strokes, effects, and other transparency needs.",
-    "$extensions": {
-      "com.figma.scopes": ["OPACITY"]
-    },
     "0": {
       "$value": 0
     },
@@ -113,15 +127,44 @@
     },
     "1000": {
       "$value": 1
+    },
+    "$type": "number",
+    "$description": {
+      "$type": "other",
+      "$value": "A comprehensive set of opacity values to ensure consistent transparency levels across all supported platforms. These values can be used for fills, strokes, effects, and other transparency needs."
+    },
+    "$extensions": {
+      "com": {
+        "figma": {
+          "scopes": {
+            "0": {
+              "$type": "other",
+              "$value": "OPACITY"
+            }
+          }
+        }
+      }
     }
   },
   "border": {
     "radius": {
-      "$type": "dimension",
-      "$description": "A comprehensive set of radius values to ensure roundness across all supported platforms. These values can be used for border-radius, corner-radius, and other roundness needs.",
-      "$extensions": {
-        "com.figma.scopes": ["CORNER_RADIUS"]
+      "$description": {
+        "$type": "other",
+        "$value": "A comprehensive set of radius values to ensure roundness across all supported platforms. These values can be used for border-radius, corner-radius, and other roundness needs."
       },
+      "$extensions": {
+        "com": {
+          "figma": {
+            "scopes": {
+              "0": {
+                "$type": "other",
+                "$value": "CORNER_RADIUS"
+              }
+            }
+          }
+        }
+      },
+      "$type": "dimension",
       "null": {
         "$value": "0px"
       },
@@ -152,17 +195,39 @@
     }
   },
   "size": {
-    "$type": "dimension",
-    "$description": "A comprehensive set of spacing/sizing values to ensure consistent layout and spacing across all supported platforms. These values can be used for margins, paddings, gaps, and other spacing needs.",
-    "$extensions": {
-      "com.figma.scopes": [
-        "WIDTH_HEIGHT",
-        "GAP",
-        "STROKE_FLOAT",
-        "EFFECT_FLOAT",
-        "OPACITY"
-      ]
+    "$description": {
+      "$type": "other",
+      "$value": "A comprehensive set of spacing/sizing values to ensure consistent layout and spacing across all supported platforms. These values can be used for margins, paddings, gaps, and other spacing needs."
     },
+    "$extensions": {
+      "com": {
+        "figma": {
+          "scopes": {
+            "0": {
+              "$type": "other",
+              "$value": "WIDTH_HEIGHT"
+            },
+            "1": {
+              "$type": "other",
+              "$value": "GAP"
+            },
+            "2": {
+              "$type": "other",
+              "$value": "STROKE_FLOAT"
+            },
+            "3": {
+              "$type": "other",
+              "$value": "EFFECT_FLOAT"
+            },
+            "4": {
+              "$type": "other",
+              "$value": "OPACITY"
+            }
+          }
+        }
+      }
+    },
+    "$type": "dimension",
     "neg": {
       "huge": {
         "$value": "-96px"
@@ -268,12 +333,24 @@
     }
   },
   "font": {
-    "$description": "A comprehensive set of typography values to ensure consistent text styles across all supported platforms. These values can be used for font sizes, weights, line heights, and letter spacing.",
+    "$description": {
+      "$type": "other",
+      "$value": "A comprehensive set of typography values to ensure consistent text styles across all supported platforms. These values can be used for font sizes, weights, line heights, and letter spacing."
+    },
     "size": {
-      "$type": "dimension",
       "$extensions": {
-        "com.figma.scopes": ["FONT_SIZE"]
+        "com": {
+          "figma": {
+            "scopes": {
+              "0": {
+                "$type": "other",
+                "$value": "FONT_SIZE"
+              }
+            }
+          }
+        }
       },
+      "$type": "dimension",
       "xxxsmall": {
         "$value": "9px"
       },
@@ -294,10 +371,19 @@
       }
     },
     "weight": {
-      "$type": "fontWeights",
       "$extensions": {
-        "com.figma.scopes": ["FONT_STYLE"]
+        "com": {
+          "figma": {
+            "scopes": {
+              "0": {
+                "$type": "other",
+                "$value": "FONT_STYLE"
+              }
+            }
+          }
+        }
       },
+      "$type": "fontWeights",
       "normal": {
         "$value": 400
       },
@@ -315,10 +401,19 @@
       }
     },
     "lineHeight": {
-      "$type": "number",
       "$extensions": {
-        "com.figma.scopes": ["LINE_HEIGHT"]
+        "com": {
+          "figma": {
+            "scopes": {
+              "0": {
+                "$type": "other",
+                "$value": "LINE_HEIGHT"
+              }
+            }
+          }
+        }
       },
+      "$type": "number",
       "default": {
         "$value": "16px"
       },
@@ -327,10 +422,19 @@
       }
     },
     "letterSpacing": {
-      "$type": "dimension",
       "$extensions": {
-        "com.figma.scopes": ["LETTER_SPACING"]
+        "com": {
+          "figma": {
+            "scopes": {
+              "0": {
+                "$type": "other",
+                "$value": "LETTER_SPACING"
+              }
+            }
+          }
+        }
       },
+      "$type": "dimension",
       "neg": {
         "xlarge": {
           "$value": "-0.16px"
@@ -362,7 +466,10 @@
     }
   },
   "shadow": {
-    "$description": "Color tokens used in shadow and elevation effects. Declared once here and referenced as aliases in mode-specific effect files.",
+    "$description": {
+      "$type": "other",
+      "$value": "Color tokens used in shadow and elevation effects. Declared once here and referenced as aliases in mode-specific effect files."
+    },
     "color": {
       "$type": "color",
       "black": {

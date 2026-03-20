@@ -1,21 +1,21 @@
 {
   "colorChip": {
     "radius": {
-      "$value": "{border.radius.small}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.small}"
     },
     "border": {
       "color": {
-        "$value": "rgba(0, 0, 0, 0.1)",
-        "$type": "color"
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.1)"
       },
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "offset": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       }
     }
   }

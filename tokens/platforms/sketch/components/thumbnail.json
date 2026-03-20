@@ -1,39 +1,39 @@
 {
   "thumbnail": {
     "width": {
-      "$value": "{size.pos.medium}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.medium}"
     },
     "height": {
-      "$value": "{size.pos.medium}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.medium}"
     },
     "padding": {
-      "$value": "{size.pos.xsmall}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{size.pos.xsmall}"
     },
     "radius": {
-      "$value": "{border.radius.large}",
-      "$type": "dimension"
+      "$type": "dimension",
+      "$value": "{border.radius.large}"
     },
     "border": {
       "width": {
-        "$value": "{size.pos.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.unit}"
       },
       "offset": {
-        "$value": "{size.neg.unit}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.neg.unit}"
       },
       "color": {
-        "$value": "{sketch.color.border.primary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.border.primary}"
       }
     },
     "background": {
       "color": {
-        "$value": "{sketch.color.background.secondary}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{sketch.color.background.secondary}"
       }
     }
   }

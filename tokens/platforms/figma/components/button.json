@@ -2,334 +2,334 @@
   "button": {
     "base": {
       "height": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "gap": {
-        "$value": "{size.pos.xxxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxxsmall}"
       },
       "radius": {
-        "$value": "{border.radius.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{border.radius.medium}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       },
       "background": {
         "color": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         }
       },
       "border": {
         "color": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "width": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "offset": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "text": {
         "color": {
-          "$value": "{figma.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.text.default}"
         },
         "font": {
           "family": {
-            "$value": "{text.fontFamily}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{text.fontFamily}"
           },
           "size": {
-            "$value": "{font.size.xsmall}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{font.size.xsmall}"
           },
           "weight": {
-            "$value": "{font.weight.accent}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.weight.accent}"
           }
         },
         "letterSpacing": {
-          "$value": "{font.letterSpacing.pos.xlarge}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{font.letterSpacing.pos.xlarge}"
         },
         "lineHeight": {
-          "$value": "{font.lineHeight.default}",
-          "$type": "number"
+          "$type": "number",
+          "$value": "{font.lineHeight.default}"
         },
         "decoration": {
-          "$value": "none",
-          "$type": "string"
+          "$type": "string",
+          "$value": "none"
         },
         "transform": {
-          "$value": "none",
-          "$type": "string"
+          "$type": "string",
+          "$value": "none"
         }
       },
       "icon": {
         "color": {
-          "$value": "{figma.color.icon.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.icon.default}"
         },
         "width": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         },
         "height": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         }
       },
       "caret": {
         "width": {
-          "$value": "{size.pos.xsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xsmall}"
         },
         "height": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         }
       }
     },
     "small": {
       "height": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         }
       }
     },
     "large": {
       "height": {
-        "$value": "{size.pos.large}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.large}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.medium}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.pos.medium}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.medium}"
         }
       }
     },
     "status": {
       "gap": {
-        "$value": "{size.pos.xxsmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.xxsmall}"
       },
       "height": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       }
     },
     "primary": {
       "background": {
         "color": {
           "default": {
-            "$value": "{figma.color.bg.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.brand.default}"
           },
           "hover": {
-            "$value": "{figma.color.bg.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.brand.default}"
           },
           "pressed": {
-            "$value": "{figma.color.bg.brand.pressed}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.brand.pressed}"
           },
           "focus": {
-            "$value": "{figma.color.bg.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.brand.default}"
           },
           "disabled": {
-            "$value": "{figma.color.bg.disabled.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.disabled.default}"
           }
         }
       },
       "border": {
         "width": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "color": {
           "default": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "hover": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "pressed": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "focus": {
-            "$value": "{figma.color.border.onbrand.strong}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.onbrand.strong}"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "text": {
         "color": {
           "default": {
-            "$value": "{figma.color.text.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.onbrand.default}"
           },
           "hover": {
-            "$value": "{figma.color.text.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.onbrand.default}"
           },
           "pressed": {
-            "$value": "{figma.color.text.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.onbrand.default}"
           },
           "focus": {
-            "$value": "{figma.color.text.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.onbrand.default}"
           },
           "disabled": {
-            "$value": "{figma.color.text.ondisabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.ondisabled}"
           }
         },
         "decoration": {
           "default": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "hover": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "pressed": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "focus": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "icon": {
         "color": {
           "default": {
-            "$value": "{figma.color.icon.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.onbrand.default}"
           },
           "hover": {
-            "$value": "{figma.color.icon.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.onbrand.default}"
           },
           "pressed": {
-            "$value": "{figma.color.icon.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.onbrand.default}"
           },
           "focus": {
-            "$value": "{figma.color.icon.onbrand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.onbrand.default}"
           },
           "disabled": {
-            "$value": "{figma.color.icon.ondisabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.ondisabled}"
           }
         }
       }
@@ -338,162 +338,162 @@
       "background": {
         "color": {
           "default": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "hover": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "pressed": {
-            "$value": "{figma.color.bg.pressed}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.pressed}"
           },
           "focus": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "disabled": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           }
         }
       },
       "border": {
         "width": {
           "default": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "hover": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "pressed": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "focus": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "disabled": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "hover": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "pressed": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "focus": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "disabled": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           }
         },
         "color": {
           "default": {
-            "$value": "{figma.color.border.disabled.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.disabled.default}"
           },
           "hover": {
-            "$value": "{figma.color.border.disabled.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.disabled.default}"
           },
           "pressed": {
-            "$value": "{figma.color.border.disabled.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.disabled.default}"
           },
           "focus": {
-            "$value": "{figma.color.border.selected.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.selected.default}"
           },
           "disabled": {
-            "$value": "{figma.color.border.disabled.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.disabled.default}"
           }
         }
       },
       "text": {
         "color": {
           "default": {
-            "$value": "{figma.color.text.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.default}"
           },
           "hover": {
-            "$value": "{figma.color.text.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.default}"
           },
           "pressed": {
-            "$value": "{figma.color.text.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.default}"
           },
           "focus": {
-            "$value": "{figma.color.text.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.default}"
           },
           "disabled": {
-            "$value": "{figma.color.text.disabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.disabled}"
           }
         },
         "decoration": {
           "default": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "hover": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "pressed": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "focus": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "icon": {
         "color": {
           "default": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "hover": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "pressed": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "focus": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "disabled": {
-            "$value": "{figma.color.icon.disabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.disabled}"
           }
         }
       }
@@ -502,186 +502,186 @@
       "text": {
         "font": {
           "size": {
-            "$value": "{font.size.xsmall}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{font.size.xsmall}"
           }
         },
         "color": {
           "default": {
-            "$value": "{figma.color.text.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.brand.default}"
           },
           "hover": {
-            "$value": "{figma.color.text.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.brand.default}"
           },
           "pressed": {
-            "$value": "{figma.color.text.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.brand.default}"
           },
           "focus": {
-            "$value": "{figma.color.text.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.brand.default}"
           },
           "disabled": {
-            "$value": "{figma.color.text.disabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.disabled}"
           }
         },
         "decoration": {
           "default": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "hover": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "pressed": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "focus": {
-            "$value": "underline",
-            "$type": "string"
+            "$type": "string",
+            "$value": "underline"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "background": {
         "color": {
           "default": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "hover": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "pressed": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "focus": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "disabled": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           }
         }
       },
       "border": {
         "width": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "color": {
           "default": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "hover": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "pressed": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "focus": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "icon": {
         "color": {
           "default": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "hover": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "pressed": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "focus": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "disabled": {
-            "$value": "{figma.color.icon.disabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.disabled}"
           }
         }
       }
@@ -690,162 +690,162 @@
       "background": {
         "color": {
           "default": {
-            "$value": "{figma.color.bg.danger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.danger.default}"
           },
           "hover": {
-            "$value": "{figma.color.bg.danger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.danger.default}"
           },
           "pressed": {
-            "$value": "{figma.color.bg.danger.pressed}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.danger.pressed}"
           },
           "focus": {
-            "$value": "{figma.color.bg.danger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.danger.default}"
           },
           "disabled": {
-            "$value": "{figma.color.bg.disabled.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.disabled.default}"
           }
         }
       },
       "border": {
         "width": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "color": {
           "default": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "hover": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "pressed": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "focus": {
-            "$value": "{figma.color.border.ondanger.strong}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.ondanger.strong}"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "text": {
         "color": {
           "default": {
-            "$value": "{figma.color.text.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.ondanger.default}"
           },
           "hover": {
-            "$value": "{figma.color.text.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.ondanger.default}"
           },
           "pressed": {
-            "$value": "{figma.color.text.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.ondanger.default}"
           },
           "focus": {
-            "$value": "{figma.color.text.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.ondanger.default}"
           },
           "disabled": {
-            "$value": "{figma.color.text.ondisabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.ondisabled}"
           }
         },
         "decoration": {
           "default": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "hover": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "pressed": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "focus": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "icon": {
         "color": {
           "default": {
-            "$value": "{figma.color.icon.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.ondanger.default}"
           },
           "hover": {
-            "$value": "{figma.color.icon.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.ondanger.default}"
           },
           "pressed": {
-            "$value": "{figma.color.icon.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.ondanger.default}"
           },
           "focus": {
-            "$value": "{figma.color.icon.ondanger.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.ondanger.default}"
           },
           "disabled": {
-            "$value": "{figma.color.icon.ondisabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.ondisabled}"
           }
         }
       }
@@ -854,162 +854,162 @@
       "background": {
         "color": {
           "default": {
-            "$value": "{figma.color.bg.component.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.component.default}"
           },
           "hover": {
-            "$value": "{figma.color.bg.component.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.component.default}"
           },
           "pressed": {
-            "$value": "{figma.color.bg.component.pressed}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.component.pressed}"
           },
           "focus": {
-            "$value": "{figma.color.bg.component.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.component.default}"
           },
           "disabled": {
-            "$value": "{figma.color.bg.disabled.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.disabled.default}"
           }
         }
       },
       "border": {
         "width": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "color": {
           "default": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "hover": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "pressed": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "focus": {
-            "$value": "{figma.color.border.oncomponent.strong}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.oncomponent.strong}"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "text": {
         "color": {
           "default": {
-            "$value": "{figma.color.text.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.oncomponent.default}"
           },
           "hover": {
-            "$value": "{figma.color.text.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.oncomponent.default}"
           },
           "pressed": {
-            "$value": "{figma.color.text.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.oncomponent.default}"
           },
           "focus": {
-            "$value": "{figma.color.text.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.oncomponent.default}"
           },
           "disabled": {
-            "$value": "{figma.color.text.ondisabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.text.ondisabled}"
           }
         },
         "decoration": {
           "default": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "hover": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "pressed": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "focus": {
-            "$value": "none",
-            "$type": "string"
+            "$type": "string",
+            "$value": "none"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "icon": {
         "color": {
           "default": {
-            "$value": "{figma.color.icon.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.oncomponent.default}"
           },
           "hover": {
-            "$value": "{figma.color.icon.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.oncomponent.default}"
           },
           "pressed": {
-            "$value": "{figma.color.icon.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.oncomponent.default}"
           },
           "focus": {
-            "$value": "{figma.color.icon.oncomponent.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.oncomponent.default}"
           },
           "disabled": {
-            "$value": "{figma.color.icon.ondisabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.ondisabled}"
           }
         }
       }
@@ -1018,154 +1018,152 @@
   "iconButton": {
     "base": {
       "width": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "height": {
-        "$value": "{size.pos.small}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.small}"
       },
       "radius": {
-        "$value": "{border.radius.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{border.radius.medium}"
       },
       "padding": {
         "top": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "right": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "bottom": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "left": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "background": {
         "color": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         }
       },
       "border": {
         "color": {
-          "$value": "{grey.transparent}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{grey.transparent}"
         },
         "width": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         },
         "offset": {
-          "$value": "{size.null}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.null}"
         }
       },
       "text": {
         "color": {
-          "$value": "{figma.color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.text.default}"
         }
       },
       "icon": {
         "color": {
-          "$value": "{figma.color.icon.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{figma.color.icon.default}"
         },
         "width": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         },
         "height": {
-          "$value": "{size.pos.small}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.small}"
         }
       },
       "notification": {
         "width": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "height": {
-          "$value": "{size.pos.xxsmall}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xxsmall}"
         },
         "radius": {
-          "$value": "{border.radius.full}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{border.radius.full}"
         },
         "top": {
-          "$value": "{size.pos.xunit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xunit}"
         },
         "right": {
-          "$value": "{size.pos.xunit}",
-          "$type": "dimension"
+          "$type": "dimension",
+          "$value": "{size.pos.xunit}"
         },
         "border": {
           "width": {
-            "$value": "{size.pos.xunit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.xunit}"
           },
           "offset": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         }
       }
     },
     "small": {
       "width": {
-        "$value": "{size.pos.msmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.msmall}"
       },
       "height": {
-        "$value": "{size.pos.msmall}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.msmall}"
       }
     },
     "large": {
       "width": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       },
       "height": {
-        "$value": "{size.pos.medium}",
-        "$type": "dimension"
+        "$type": "dimension",
+        "$value": "{size.pos.medium}"
       }
     },
     "default": {
       "background": {
         "color": {
           "default": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "hover": {
-            "$value": "{figma.color.bg.hover}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.hover}"
           },
           "pressed": {
-            "$value": "{figma.color.bg.pressed}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.pressed}"
           },
           "focus": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "disabled": {
-            "$value": "{figma.color.bg.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.default}"
           },
           "onselected": {
-            "$value": "{figma.color.bg.selected.default}",
-            "$type": "color",
             "hover": {
               "$value": "{figma.color.bg.selected.hover}",
               "$type": "color"
@@ -1173,99 +1171,101 @@
             "disabled": {
               "$value": "{figma.color.bg.brand.tertiary}",
               "$type": "color"
-            }
+            },
+            "$type": "color",
+            "$value": "{figma.color.bg.selected.default}"
           }
         }
       },
       "border": {
         "width": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "color": {
           "default": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "hover": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "pressed": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "focus": {
-            "$value": "{figma.color.border.selected.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.selected.default}"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "icon": {
         "color": {
           "default": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "hover": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "pressed": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "focus": {
-            "$value": "{figma.color.icon.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.default}"
           },
           "disabled": {
-            "$value": "{figma.color.icon.disabled}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.disabled}"
           }
         }
       },
@@ -1273,48 +1273,48 @@
         "background": {
           "color": {
             "default": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "hover": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "pressed": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "focus": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "disabled": {
-              "$value": "{figma.color.bg.brand.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.secondary}"
             }
           }
         },
         "border": {
           "color": {
             "default": {
-              "$value": "{figma.color.bg.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.default}"
             },
             "hover": {
-              "$value": "{figma.color.bg.hover}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.hover}"
             },
             "pressed": {
-              "$value": "{figma.color.bg.pressed}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.pressed}"
             },
             "focus": {
-              "$value": "{figma.color.bg.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.default}"
             },
             "disabled": {
-              "$value": "{figma.color.bg.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.default}"
             }
           }
         }
@@ -1324,116 +1324,116 @@
       "background": {
         "color": {
           "default": {
-            "$value": "{figma.color.bg.selected.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.selected.default}"
           },
           "hover": {
-            "$value": "{figma.color.bg.selected.hover}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.selected.hover}"
           },
           "pressed": {
-            "$value": "{figma.color.bg.selected.pressed}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.selected.pressed}"
           },
           "focus": {
-            "$value": "{figma.color.bg.selected.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.selected.default}"
           },
           "disabled": {
-            "$value": "{figma.color.bg.brand.tertiary}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.bg.brand.tertiary}"
           }
         }
       },
       "border": {
         "width": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.pos.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.pos.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "offset": {
           "default": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "hover": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "pressed": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           },
           "focus": {
-            "$value": "{size.neg.unit}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.neg.unit}"
           },
           "disabled": {
-            "$value": "{size.null}",
-            "$type": "dimension"
+            "$type": "dimension",
+            "$value": "{size.null}"
           }
         },
         "color": {
           "default": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "hover": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "pressed": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           },
           "focus": {
-            "$value": "{figma.color.border.selected.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.border.selected.default}"
           },
           "disabled": {
-            "$value": "{grey.transparent}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{grey.transparent}"
           }
         }
       },
       "icon": {
         "color": {
           "default": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "hover": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "pressed": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "focus": {
-            "$value": "{figma.color.icon.brand.default}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.default}"
           },
           "disabled": {
-            "$value": "{figma.color.icon.brand.secondary}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{figma.color.icon.brand.secondary}"
           }
         }
       },
@@ -1441,48 +1441,48 @@
         "background": {
           "color": {
             "default": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "hover": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "pressed": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "focus": {
-              "$value": "{figma.color.bg.brand.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.default}"
             },
             "disabled": {
-              "$value": "{figma.color.bg.brand.secondary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.secondary}"
             }
           }
         },
         "border": {
           "color": {
             "default": {
-              "$value": "{figma.color.bg.selected.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.selected.default}"
             },
             "hover": {
-              "$value": "{figma.color.bg.tertiary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.tertiary}"
             },
             "pressed": {
-              "$value": "{figma.color.bg.brand.tertiary}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.brand.tertiary}"
             },
             "focus": {
-              "$value": "{figma.color.bg.selected.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.selected.default}"
             },
             "disabled": {
-              "$value": "{figma.color.bg.selected.default}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{figma.color.bg.selected.default}"
             }
           }
         }
