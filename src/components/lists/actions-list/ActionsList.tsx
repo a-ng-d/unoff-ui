@@ -478,6 +478,16 @@ export default class ActionsList extends React.Component<
         >
           {option.label}
         </span>
+        {option.shortcut !== undefined && (
+          <span
+            className={doClassnames([
+              texts.type,
+              'select-menu__item__shortcut',
+            ])}
+          >
+            {option.shortcut}
+          </span>
+        )}
         {(option.isBlocked || option.isNew) && (
           <Chip preview={preview}>{option.isNew ? 'New' : 'Pro'}</Chip>
         )}
@@ -598,6 +608,16 @@ export default class ActionsList extends React.Component<
         >
           {option.label}
         </span>
+        {option.shortcut !== undefined && (
+          <span
+            className={doClassnames([
+              texts.type,
+              'select-menu__item__shortcut',
+            ])}
+          >
+            {option.shortcut}
+          </span>
+        )}
         {(option.isBlocked || option.isNew) && (
           <Chip preview={preview}>{option.isNew ? 'New' : 'Pro'}</Chip>
         )}

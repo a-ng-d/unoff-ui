@@ -2,6 +2,7 @@ import React from 'react'
 
 export interface DropdownOption {
   label?: string
+  shortcut?: string
   value?: string
   feature?: string
   type: 'OPTION' | 'TITLE' | 'SEPARATOR' | 'GROUP'
