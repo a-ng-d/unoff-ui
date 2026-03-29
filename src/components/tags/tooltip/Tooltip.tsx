@@ -41,6 +41,12 @@ const Tooltip = (props: TooltipProps) => {
   )
 
   useEffect(() => {
+    const handleScroll = () => setIsVisible(false)
+    window.addEventListener('scroll', handleScroll, true)
+    return () => window.removeEventListener('scroll', handleScroll, true)
+  }, [])
+
+  useEffect(() => {
     const tooltipEl = tooltipRef.current
     if (!tooltipEl) return
 
