@@ -4,6 +4,10 @@
       "$type": "link",
       "$value": "/src/icons/penpot/adjust.svg"
     },
+    "ai": {
+      "$type": "link",
+      "$value": "/src/icons/penpot/ai.svg"
+    },
     "alert": {
       "$type": "link",
       "$value": "/src/icons/penpot/alert.svg"
@@ -88,9 +92,17 @@
       "$type": "link",
       "$value": "/src/icons/penpot/code.svg"
     },
+    "colors": {
+      "$type": "link",
+      "$value": "/src/icons/penpot/colors.svg"
+    },
     "component": {
       "$type": "link",
       "$value": "/src/icons/penpot/component.svg"
+    },
+    "contrast": {
+      "$type": "link",
+      "$value": "/src/icons/penpot/contrast.svg"
     },
     "copy": {
       "$type": "link",
@@ -127,6 +139,10 @@
     "ellipses": {
       "$type": "link",
       "$value": "/src/icons/penpot/ellipses.svg"
+    },
+    "explore": {
+      "$type": "link",
+      "$value": "/src/icons/penpot/explore.svg"
     },
     "eyedropper": {
       "$type": "link",
