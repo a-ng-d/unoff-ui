@@ -16,6 +16,11 @@
     -webkit-mask-image: var(--icon-adjust);
   }
 
+  &--ai {
+    mask-image: var(--icon-ai);
+    -webkit-mask-image: var(--icon-ai);
+  }
+
   &--alert {
     mask-image: var(--icon-alert);
     -webkit-mask-image: var(--icon-alert);
@@ -121,9 +126,19 @@
     -webkit-mask-image: var(--icon-code);
   }
 
+  &--colors {
+    mask-image: var(--icon-colors);
+    -webkit-mask-image: var(--icon-colors);
+  }
+
   &--component {
     mask-image: var(--icon-component);
     -webkit-mask-image: var(--icon-component);
+  }
+
+  &--contrast {
+    mask-image: var(--icon-contrast);
+    -webkit-mask-image: var(--icon-contrast);
   }
 
   &--copy {
@@ -170,7 +185,12 @@
     mask-image: var(--icon-ellipses);
     -webkit-mask-image: var(--icon-ellipses);
   }
-
+  
+  &--explore {
+    mask-image: var(--icon-explore);
+    -webkit-mask-image: var(--icon-explore);
+  }
+  
   &--eyedropper {
     mask-image: var(--icon-eyedropper);
     -webkit-mask-image: var(--icon-eyedropper);

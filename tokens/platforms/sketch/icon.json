@@ -4,6 +4,10 @@
       "$type": "link",
       "$value": "/src/icons/sketch/adjust.svg"
     },
+    "ai": {
+      "$type": "link",
+      "$value": "/src/icons/sketch/ai.svg"
+    },
     "alert": {
       "$type": "link",
       "$value": "/src/icons/sketch/alert.svg"
@@ -88,9 +92,17 @@
       "$type": "link",
       "$value": "/src/icons/sketch/code.svg"
     },
+    "colors": {
+      "$type": "link",
+      "$value": "/src/icons/sketch/colors.svg"
+    },
     "component": {
       "$type": "link",
       "$value": "/src/icons/sketch/component.svg"
+    },
+    "contrast": {
+      "$type": "link",
+      "$value": "/src/icons/sketch/contrast.svg"
     },
     "copy": {
       "$type": "link",
@@ -127,6 +139,10 @@
     "ellipses": {
       "$type": "link",
       "$value": "/src/icons/sketch/ellipses.svg"
+    },
+    "explore": {
+      "$type": "link",
+      "$value": "/src/icons/sketch/explore.svg"
     },
     "eyedropper": {
       "$type": "link",

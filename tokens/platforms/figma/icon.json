@@ -4,6 +4,10 @@
       "$type": "link",
       "$value": "/src/icons/figma/adjust.svg"
     },
+    "ai": {
+      "$type": "link",
+      "$value": "/src/icons/figma/ai.svg"
+    },
     "alert": {
       "$type": "link",
       "$value": "/src/icons/figma/alert.svg"
@@ -88,9 +92,17 @@
       "$type": "link",
       "$value": "/src/icons/figma/code.svg"
     },
+    "colors": {
+      "$type": "link",
+      "$value": "/src/icons/figma/colors.svg"
+    },
     "component": {
       "$type": "link",
       "$value": "/src/icons/figma/component.svg"
+    },
+    "contrast": {
+      "$type": "link",
+      "$value": "/src/icons/figma/contrast.svg"
     },
     "copy": {
       "$type": "link",
@@ -127,6 +139,10 @@
     "ellipses": {
       "$type": "link",
       "$value": "/src/icons/figma/ellipses.svg"
+    },
+    "explore": {
+      "$type": "link",
+      "$value": "/src/icons/figma/explore.svg"
     },
     "eyedropper": {
       "$type": "link",

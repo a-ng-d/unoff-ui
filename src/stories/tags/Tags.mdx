@@ -91,7 +91,9 @@ A text overlay appearing on hover or focus, providing supplementary information 
 
 - `pin="TOP"` / `"BOTTOM"` positions the tooltip relative to its trigger.
 - `type="SINGLE_LINE"` for labels; `"MULTI_LINE"` for descriptions; `"WITH_IMAGE"` for rich previews.
-- Rendered as a child of the trigger element — inherits positioning from its parent.
+- `image` provides a URL displayed alongside the text — only used when `type` is `"WITH_IMAGE"`.
+- `anchor` accepts a ref to the trigger element. When provided, the tooltip renders via a portal at `document.body` level, escaping any `overflow:hidden` ancestor. Position is calculated from the anchor's bounding rect using `position:fixed`.
+- Without `anchor`, the tooltip renders inline as a child of the trigger and auto-shifts horizontally to stay within the viewport.
 - Do not use as the sole accessible name for an interactive element; prefer `aria-label` on the trigger.
 
 </Tab>
