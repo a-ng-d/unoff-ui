@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.23.9] - 2026-04-01
+
+### Changed
+
+- **`FormItem` layout**: Corrected `min-width` to `min-height` for better responsiveness
+- **`DraggableWindow` `clip` prop**: New prop introduced for improved layout control
+
 ## [1.23.8] - 2026-03-30
 
 ### Changed
