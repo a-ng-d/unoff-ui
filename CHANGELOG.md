@@ -77,6 +77,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.23.1] - 2026-03-18
 
 ### Fixed
+
 - **`Dropdown` ellipsis**: Truncate the button label if the text overflows if the `alignment` is set to `FILL`
 
 ## [1.23.0] - 2026-03-18

@@ -78,7 +78,6 @@ interface SegmentedControlState {
   activeTooltipId: string | null
 }
 
-
 export default class SegmentedControl extends React.Component<
   SegmentedControlProps,
   SegmentedControlState
