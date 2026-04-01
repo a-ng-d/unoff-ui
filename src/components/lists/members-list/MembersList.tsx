@@ -31,7 +31,10 @@ export interface MembersListState {
   isMembersListVisible: boolean
 }
 
-export default class MembersList extends React.Component<MembersListProps, MembersListState> {
+export default class MembersList extends React.Component<
+  MembersListProps,
+  MembersListState
+> {
   private memberRefs: Map<number, HTMLDivElement | null> = new Map()
   private remainingRef: React.RefObject<HTMLDivElement> = React.createRef()
 

@@ -297,7 +297,12 @@ export default class Knob extends React.Component<KnobProps, KnobState> {
           aria-hidden="true"
         ></div>
         {helper !== undefined && isTooltipOpen && (
-          <Tooltip anchor={this.knobRef} type={helper.type}>{helper.label}</Tooltip>
+          <Tooltip
+            anchor={this.knobRef}
+            type={helper.type}
+          >
+            {helper.label}
+          </Tooltip>
         )}
       </div>
     )

@@ -19,7 +19,7 @@
     cursor: default;
     padding: var(--form-item-padding-top) var(--form-item-padding-right)
       var(--form-item-padding-bottom) var(--form-item-padding-left);
-    min-width: var(--form-item-min-width);
+    min-height: var(--form-item-min-height);
     user-select: none;
 
     .form-item__label {
@@ -89,6 +89,17 @@
 
     .form-item__chip {
       margin: 0;
+    }
+  }
+
+  @media (width <= 460px) {
+    .form-item__row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .form-item__label {
+      flex: 1;
     }
   }
 }

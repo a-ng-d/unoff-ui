@@ -32,13 +32,21 @@ export interface TooltipProps {
 }
 
 const Tooltip = (props: TooltipProps) => {
-  const { children, pin = 'BOTTOM', type = 'SINGLE_LINE', image, anchor } = props
+  const {
+    children,
+    pin = 'BOTTOM',
+    type = 'SINGLE_LINE',
+    image,
+    anchor,
+  } = props
   const tooltipRef = useRef<HTMLDivElement>(null)
   const [shift, setShift] = React.useState(0)
   const [isVisible, setIsVisible] = useState(false)
-  const [fixedPos, setFixedPos] = useState<{ top: number; left: number; arrowLeft: number } | null>(
-    null
-  )
+  const [fixedPos, setFixedPos] = useState<{
+    top: number
+    left: number
+    arrowLeft: number
+  } | null>(null)
   const prevFixedPos = useRef<{ top: number; left: number } | null>(null)
   const hasShownRef = useRef(false)
 
@@ -80,7 +88,10 @@ const Tooltip = (props: TooltipProps) => {
 
         const arrowLeft = anchorCenterX - left
 
-        if (prevFixedPos.current?.top !== top || prevFixedPos.current?.left !== left) {
+        if (
+          prevFixedPos.current?.top !== top ||
+          prevFixedPos.current?.left !== left
+        ) {
           prevFixedPos.current = { top, left }
           setFixedPos({ top, left, arrowLeft })
         }
@@ -117,14 +128,16 @@ const Tooltip = (props: TooltipProps) => {
       ])}
       role="tooltip"
       ref={tooltipRef}
-      style={{
-        visibility: isVisible ? 'visible' : 'hidden',
-        ...(fixedPos !== null && {
-          top: fixedPos.top,
-          left: fixedPos.left,
-          '--_arrow-left': `${fixedPos.arrowLeft}px`,
-        }),
-      } as React.CSSProperties}
+      style={
+        {
+          visibility: isVisible ? 'visible' : 'hidden',
+          ...(fixedPos !== null && {
+            top: fixedPos.top,
+            left: fixedPos.left,
+            '--_arrow-left': `${fixedPos.arrowLeft}px`,
+          }),
+        } as React.CSSProperties
+      }
       aria-hidden={!isVisible}
     >
       <div

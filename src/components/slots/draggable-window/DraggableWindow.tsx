@@ -124,6 +124,7 @@ const DraggableWindow = (props: DraggableWindowProps) => {
           padding="0 var(--size-pos-xxsmall)"
           isCompact
           shouldReflow={false}
+          clip={['LEFT']}
           border={['BOTTOM']}
         />
       </div>
