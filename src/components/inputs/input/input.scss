@@ -213,7 +213,7 @@
       );
     }
 
-    &:placeholder-shown:hover:not(:disabled) {
+    &:placeholder-shown:hover {
       --input-background-color: var(--input-background-color-empty-hover);
       --input-border-width: var(--input-border-width-empty-hover);
       --input-border-offset: var(--input-border-offset-empty-hover);
@@ -248,7 +248,7 @@
       );
     }
 
-    &--error:placeholder-shown:hover:not(:disabled) {
+    &--error:placeholder-shown:hover {
       --input-background-color: var(--input-background-color-empty-error-hover);
       --input-border-width: var(--input-border-width-empty-error-hover);
       --input-border-offset: var(--input-border-offset-empty-error-hover);
@@ -270,7 +270,7 @@
       );
     }
 
-    &:hover:not(:disabled) {
+    &:hover {
       --input-background-color: var(--input-background-color-hover);
       --input-border-width: var(--input-border-width-hover);
       --input-border-offset: var(--input-border-offset-hover);
@@ -299,7 +299,7 @@
       );
     }
 
-    &--error:hover:not(:disabled) {
+    &--error:hover {
       --input-background-color: var(--input-background-color-error-hover);
       --input-border-width: var(--input-border-width-error-hover);
       --input-border-offset: var(--input-border-offset-error-hover);
@@ -352,7 +352,7 @@
   }
 
   &__color {
-    &:hover:not(:disabled) ~ .input__field {
+    &:hover ~ .input__field {
       --input-background-color: var(--input-background-color-hover);
       --input-border-width: var(--input-border-width-hover);
       --input-border-offset: var(--input-border-offset-hover);

@@ -118,6 +118,7 @@ const DraggableWindow = (props: DraggableWindowProps) => {
             <Button
               type="icon"
               icon="close"
+              size="small"
               action={onClose}
             />
           }
